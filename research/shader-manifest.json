@@ -397,5 +397,118 @@
     "component": "components/StarOverlay",
     "line": 54774,
     "type": "frag"
+  },
+  {
+    "name": "CoinRing-extracted-58.vert.glsl",
+    "binding": "extractedShader58",
+    "component": "models/CoinRing",
+    "line": 41067,
+    "type": "vert",
+    "parameters": [
+      "Hy.toFixed(1)",
+      "Uy.toFixed(1)",
+      "Gy.toFixed(1)",
+      "Jy.toFixed(1)",
+      "Wy.toFixed(3)",
+      "Ky.toFixed(1)",
+      "Jy.toFixed(1)",
+      "Wy.toFixed(3)",
+      "qy.toFixed(1)",
+      "Jy.toFixed(1)",
+      "Wy.toFixed(3)",
+      "zy.toFixed(1)",
+      "By.toFixed(1)",
+      "Vy.toFixed(2)",
+      "zy.toFixed(1)",
+      "Vy.toFixed(2)"
+    ]
+  },
+  {
+    "name": "HandsModel-extracted-59.chunk.glsl",
+    "binding": "extractedShader59",
+    "component": "models/HandsModel",
+    "line": 40764,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "OrigamiCertificate-extracted-60.chunk.glsl",
+    "binding": "extractedShader60",
+    "component": "components/OrigamiCertificate",
+    "line": 48358,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "GateThreeToFour-extracted-61.chunk.glsl",
+    "binding": "extractedShader61",
+    "component": "stages/GateThreeToFour",
+    "line": 44600,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "GateThreeToFour-extracted-62.chunk.glsl",
+    "binding": "extractedShader62",
+    "component": "stages/GateThreeToFour",
+    "line": 44610,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "GateThreeToFour-extracted-63.chunk.glsl",
+    "binding": "extractedShader63",
+    "component": "stages/GateThreeToFour",
+    "line": 44629,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "GateThreeToFour-extracted-64.chunk.glsl",
+    "binding": "extractedShader64",
+    "component": "stages/GateThreeToFour",
+    "line": 44745,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "GateThreeToFour-extracted-65.chunk.glsl",
+    "binding": "extractedShader65",
+    "component": "stages/GateThreeToFour",
+    "line": 44755,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "MapStages-extracted-66.chunk.glsl",
+    "binding": "extractedShader66",
+    "component": "stages/MapStages",
+    "line": 52873,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "GateThreeToFour-extracted-67.chunk.glsl",
+    "binding": "extractedShader67",
+    "component": "stages/GateThreeToFour",
+    "line": 44605,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "GateThreeToFour-extracted-68.chunk.glsl",
+    "binding": "extractedShader68",
+    "component": "stages/GateThreeToFour",
+    "line": 44750,
+    "type": "chunk",
+    "parameters": []
+  },
+  {
+    "name": "MapStages-extracted-69.chunk.glsl",
+    "binding": "extractedShader69",
+    "component": "stages/MapStages",
+    "line": 52885,
+    "type": "chunk",
+    "parameters": []
   }
 ]

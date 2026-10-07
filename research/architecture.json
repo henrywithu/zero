@@ -1,0 +1,586 @@
+{
+  "moduleCount": 79,
+  "cycles": [],
+  "modules": [
+    {
+      "file": "src/app/experience.ts",
+      "dependencies": [
+        "src/assets/AssetLoader.ts",
+        "src/audio/AudioManager.ts",
+        "src/components/CircleHint.ts",
+        "src/components/GlassEffects.ts",
+        "src/components/Hud.ts",
+        "src/components/LoaderHand.ts",
+        "src/components/LoaderTextOverlay.ts",
+        "src/components/StarOverlay.ts",
+        "src/components/StatusController.ts",
+        "src/config/tunnel.ts",
+        "src/content/companies.ts",
+        "src/input/CameraRig.ts",
+        "src/input/ScrollManager.ts",
+        "src/input/ZeroGesture.ts",
+        "src/input/cursors.ts",
+        "src/models/CoinRing.ts",
+        "src/models/HandsModel.ts",
+        "src/models/HandsModelTwo.ts",
+        "src/models/MapMarkers.ts",
+        "src/models/PetalParticles.ts",
+        "src/models/origami.ts",
+        "src/rendering/BackgroundPass.ts",
+        "src/rendering/BurnMaterial.ts",
+        "src/rendering/ForegroundPass.ts",
+        "src/rendering/FrostingPass.ts",
+        "src/rendering/GlassShardPass.ts",
+        "src/rendering/LensBlurPass.ts",
+        "src/rendering/QualityManager.ts",
+        "src/rendering/ShatterPass.ts",
+        "src/rendering/TextPass.ts",
+        "src/rendering/textureUtils.ts",
+        "src/runtime/interop.ts",
+        "src/runtime/preload.ts",
+        "src/stages/GateOneToTwo.ts",
+        "src/stages/GateThreeToFour.ts",
+        "src/stages/StageManager.ts",
+        "src/stages/StageOne.ts",
+        "src/stages/shared.ts"
+      ]
+    },
+    {
+      "file": "src/assets/AssetLoader.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/audio/AudioManager.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/components/CircleHint.ts",
+      "dependencies": [
+        "src/components/LoaderTextOverlay.ts",
+        "src/input/cursors.ts"
+      ]
+    },
+    {
+      "file": "src/components/CompanyPopup.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/components/CompanyPopupBehavior.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/components/CompanyPopup.ts",
+        "src/content/companies.ts"
+      ]
+    },
+    {
+      "file": "src/components/EmailGate.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/components/FormValidation.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/components/GlassEffects.ts",
+      "dependencies": [
+        "src/stages/StageManager.ts"
+      ]
+    },
+    {
+      "file": "src/components/HoldButton.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts"
+      ]
+    },
+    {
+      "file": "src/components/Hud.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/components/HoldButton.ts"
+      ]
+    },
+    {
+      "file": "src/components/JoinForm.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/components/FormValidation.ts",
+        "src/components/JoinFormStyles.ts",
+        "src/services/waitlistState.ts"
+      ]
+    },
+    {
+      "file": "src/components/JoinFormStyles.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/components/LoaderHand.ts",
+      "dependencies": [
+        "src/models/AnimatedModel.ts"
+      ]
+    },
+    {
+      "file": "src/components/LoaderTextOverlay.ts",
+      "dependencies": [
+        "src/components/LoaderHand.ts"
+      ]
+    },
+    {
+      "file": "src/components/MapControls.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/models/CloudField.ts"
+      ]
+    },
+    {
+      "file": "src/components/MobileTimeline.ts",
+      "dependencies": [
+        "src/components/ScrollRuler.ts"
+      ]
+    },
+    {
+      "file": "src/components/OrigamiCertificate.ts",
+      "dependencies": [
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/components/OrigamiPreview.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/components/Referral.ts",
+      "dependencies": [
+        "src/components/Sharing.ts",
+        "src/components/WaitlistOverlay.ts",
+        "src/components/shareIcons.ts"
+      ]
+    },
+    {
+      "file": "src/components/ScrollRuler.ts",
+      "dependencies": [
+        "src/rendering/LensBlurPass.ts"
+      ]
+    },
+    {
+      "file": "src/components/ShareCard.ts",
+      "dependencies": [
+        "src/components/SharePreview.ts",
+        "src/components/WaitlistOverlay.ts"
+      ]
+    },
+    {
+      "file": "src/components/SharePreview.ts",
+      "dependencies": [
+        "src/components/OrigamiCertificate.ts"
+      ]
+    },
+    {
+      "file": "src/components/Sharing.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/components/ShareCard.ts",
+        "src/components/WaitlistOverlay.ts",
+        "src/components/shareIcons.ts",
+        "src/runtime/interop.ts",
+        "src/runtime/preload.ts"
+      ]
+    },
+    {
+      "file": "src/components/StarOverlay.ts",
+      "dependencies": [
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/components/StatusController.ts",
+      "dependencies": [
+        "src/services/waitlistState.ts"
+      ]
+    },
+    {
+      "file": "src/components/TextSprites.ts",
+      "dependencies": [
+        "src/rendering/PaperMaterials.ts",
+        "src/rendering/QualityManager.ts"
+      ]
+    },
+    {
+      "file": "src/components/WaitlistOverlay.ts",
+      "dependencies": [
+        "src/components/OrigamiCertificate.ts",
+        "src/components/OrigamiPreview.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/components/shareIcons.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/config/atlases.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/config/tunnel.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/content/companies.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/input/AutoScroll.ts",
+      "dependencies": [
+        "src/input/ScrollManager.ts"
+      ]
+    },
+    {
+      "file": "src/input/CameraRig.ts",
+      "dependencies": [
+        "src/input/ScrollManager.ts",
+        "src/input/ZeroGesture.ts"
+      ]
+    },
+    {
+      "file": "src/input/ScrollManager.ts",
+      "dependencies": [
+        "src/input/ZeroGesture.ts"
+      ]
+    },
+    {
+      "file": "src/input/ZeroGesture.ts",
+      "dependencies": [
+        "src/assets/AssetLoader.ts",
+        "src/components/Hud.ts"
+      ]
+    },
+    {
+      "file": "src/input/cursors.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/main.ts",
+      "dependencies": [
+        "src/app/experience.ts",
+        "src/runtime/plugins.ts"
+      ]
+    },
+    {
+      "file": "src/models/AnimatedModel.ts",
+      "dependencies": [
+        "src/rendering/FrostingPass.ts",
+        "src/rendering/TextMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/models/CloudField.ts",
+      "dependencies": [
+        "src/config/atlases.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/models/CoinRing.ts",
+      "dependencies": [
+        "src/models/HandsModel.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/models/GlassShards.ts",
+      "dependencies": [
+        "src/models/HandsModelTwo.ts"
+      ]
+    },
+    {
+      "file": "src/models/HandsModel.ts",
+      "dependencies": [
+        "src/models/AnimatedModel.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/models/HandsModelTwo.ts",
+      "dependencies": [
+        "src/models/AnimatedModel.ts"
+      ]
+    },
+    {
+      "file": "src/models/MapMarkers.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/models/MapScene.ts",
+      "dependencies": [
+        "src/components/CompanyPopup.ts",
+        "src/components/CompanyPopupBehavior.ts",
+        "src/content/companies.ts",
+        "src/rendering/MapMaterials.ts"
+      ]
+    },
+    {
+      "file": "src/models/OrigamiAvatar.ts",
+      "dependencies": [
+        "src/components/EmailGate.ts",
+        "src/components/JoinForm.ts",
+        "src/components/Referral.ts",
+        "src/components/WaitlistOverlay.ts",
+        "src/models/origami.ts",
+        "src/services/waitlistState.ts"
+      ]
+    },
+    {
+      "file": "src/models/PetalParticles.ts",
+      "dependencies": [
+        "src/models/CoinRing.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/models/origami.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/rendering/BackgroundPass.ts",
+      "dependencies": [
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/BurnMaterial.ts",
+      "dependencies": [
+        "src/components/TextSprites.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/ForegroundPass.ts",
+      "dependencies": [
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/FrostingPass.ts",
+      "dependencies": [
+        "src/rendering/ShaderMaterial.ts",
+        "src/rendering/textureUtils.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/GlassShardPass.ts",
+      "dependencies": [
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/LensBlurPass.ts",
+      "dependencies": [
+        "src/rendering/ForegroundPass.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/MapMaterials.ts",
+      "dependencies": [
+        "src/content/companies.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/PaperMaterials.ts",
+      "dependencies": [
+        "src/models/PetalParticles.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/QualityManager.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/rendering/ShaderMaterial.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/rendering/ShatterPass.ts",
+      "dependencies": [
+        "src/rendering/FrostingPass.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/TextMaterial.ts",
+      "dependencies": [
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/TextPass.ts",
+      "dependencies": [
+        "src/rendering/QualityManager.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/TunnelMaterials.ts",
+      "dependencies": [
+        "src/config/tunnel.ts",
+        "src/rendering/ShaderMaterial.ts"
+      ]
+    },
+    {
+      "file": "src/rendering/precompileScene.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/rendering/textureUtils.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/runtime/interop.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/runtime/plugins.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/runtime/preload.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/services/LocalWaitlist.ts",
+      "dependencies": []
+    },
+    {
+      "file": "src/services/waitlistState.ts",
+      "dependencies": [
+        "src/models/origami.ts",
+        "src/services/LocalWaitlist.ts"
+      ]
+    },
+    {
+      "file": "src/stages/GateOneToTwo.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/components/TextSprites.ts",
+        "src/input/ZeroGesture.ts",
+        "src/models/GlassShards.ts",
+        "src/models/HandsModelTwo.ts",
+        "src/rendering/TextMaterial.ts",
+        "src/rendering/textureUtils.ts",
+        "src/stages/shared.ts"
+      ]
+    },
+    {
+      "file": "src/stages/GateThreeToFour.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/config/atlases.ts",
+        "src/config/tunnel.ts",
+        "src/rendering/ShaderMaterial.ts",
+        "src/rendering/TunnelMaterials.ts",
+        "src/rendering/textureUtils.ts",
+        "src/stages/shared.ts"
+      ]
+    },
+    {
+      "file": "src/stages/GateZeroToOne.ts",
+      "dependencies": [
+        "src/components/TextSprites.ts",
+        "src/models/CoinRing.ts",
+        "src/models/HandsModel.ts",
+        "src/models/PetalParticles.ts",
+        "src/rendering/BurnMaterial.ts",
+        "src/rendering/TextMaterial.ts",
+        "src/rendering/textureUtils.ts",
+        "src/stages/StageOne.ts",
+        "src/stages/shared.ts"
+      ]
+    },
+    {
+      "file": "src/stages/MapStages.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/components/CompanyPopup.ts",
+        "src/components/CompanyPopupBehavior.ts",
+        "src/components/MapControls.ts",
+        "src/components/TextSprites.ts",
+        "src/input/cursors.ts",
+        "src/models/CloudField.ts",
+        "src/models/MapMarkers.ts",
+        "src/models/MapScene.ts",
+        "src/models/OrigamiAvatar.ts",
+        "src/rendering/QualityManager.ts",
+        "src/rendering/ShaderMaterial.ts",
+        "src/rendering/TextMaterial.ts",
+        "src/rendering/textureUtils.ts",
+        "src/stages/GateOneToTwo.ts",
+        "src/stages/GateThreeToFour.ts",
+        "src/stages/GateZeroToOne.ts",
+        "src/stages/StageOne.ts",
+        "src/stages/StageThree.ts",
+        "src/stages/StageTwo.ts",
+        "src/stages/shared.ts"
+      ]
+    },
+    {
+      "file": "src/stages/StageManager.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/components/CompanyPopupBehavior.ts",
+        "src/components/EmailGate.ts",
+        "src/components/MobileTimeline.ts",
+        "src/components/ScrollRuler.ts",
+        "src/models/OrigamiAvatar.ts",
+        "src/stages/MapStages.ts",
+        "src/stages/shared.ts"
+      ]
+    },
+    {
+      "file": "src/stages/StageOne.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/input/ZeroGesture.ts",
+        "src/models/origami.ts",
+        "src/rendering/GlassShardPass.ts",
+        "src/rendering/QualityManager.ts",
+        "src/rendering/ShatterPass.ts",
+        "src/rendering/textureUtils.ts",
+        "src/stages/GateOneToTwo.ts",
+        "src/stages/shared.ts"
+      ]
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/components/TextSprites.ts",
+        "src/config/tunnel.ts",
+        "src/rendering/BurnMaterial.ts",
+        "src/rendering/QualityManager.ts",
+        "src/rendering/TextMaterial.ts",
+        "src/rendering/TunnelMaterials.ts",
+        "src/rendering/precompileScene.ts",
+        "src/rendering/textureUtils.ts",
+        "src/stages/GateThreeToFour.ts",
+        "src/stages/shared.ts"
+      ]
+    },
+    {
+      "file": "src/stages/StageTwo.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts",
+        "src/input/ZeroGesture.ts",
+        "src/rendering/textureUtils.ts",
+        "src/stages/shared.ts"
+      ]
+    },
+    {
+      "file": "src/stages/shared.ts",
+      "dependencies": [
+        "src/audio/AudioManager.ts"
+      ]
+    }
+  ]
+}

@@ -592,7 +592,8 @@ export function createExperience() {
     }
     loaderText &&
       !frostingPass.active &&
-      (loaderText.dispose(),
+      (gsap.killTweensOf(loaderText),
+      loaderText.dispose(),
       (loaderText = null),
       document.body.classList.remove(`webgl-loader-overlay`));
     circleHint &&

@@ -96,7 +96,8 @@ export class ScrollManager {
     }
     const smoothing =
       delta > 0 ? 1 - Math.exp(-this._smoothSpeed * delta) : Pg.SCROLL_LERP;
-    this.scrollPos += (this.targetScrollPos - this.scrollPos) * smoothing;
+    this.scrollPos =
+      (1 - smoothing) * this.scrollPos + smoothing * this.targetScrollPos;
     if (Math.abs(this.scrollPos - this.targetScrollPos) < 0.5)
       this.scrollPos = this.targetScrollPos;
     this.publish(this.scrollPos / length);

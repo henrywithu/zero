@@ -3,7 +3,6 @@ import { lE } from "./shareIcons.ts";
 import { cE } from "./shareIcons.ts";
 // Recovered behavior with explicit dynamic boundaries; see research/REVERSE_ENGINEERING.md.
 import { HT, WT, BT, VT } from "./WaitlistOverlay.ts";
-import "./Referral.ts";
 import { aE } from "./ShareCard.ts";
 import { audioManager } from "../audio/AudioManager.ts";
 import { gsap } from "gsap";

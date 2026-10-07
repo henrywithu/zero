@@ -1,0 +1,37 @@
+[
+  {
+    "file": "research/original/index.html",
+    "source": "https://why.zero.university/",
+    "archivedBytes": 7862,
+    "archivedSha256": "4c753c4fb0c9945dc73d4b1127383f389d652f0e9a23751eacf0eaa3a89d8a10",
+    "note": "Inspect-only source archive; main.js is formatted to preserve source-line provenance."
+  },
+  {
+    "file": "research/original/main.js",
+    "source": "https://why.zero.university/assets/main-B9-HtP-f.js",
+    "archivedBytes": 1790107,
+    "archivedSha256": "816faeef6f0ae30361737db95fe9e3ea5d3a60358332e473a9298039efd1aaf2",
+    "note": "Inspect-only source archive; main.js is formatted to preserve source-line provenance."
+  },
+  {
+    "file": "research/original/main.css",
+    "source": "https://why.zero.university/assets/main-yeWZtezw.css",
+    "archivedBytes": 24691,
+    "archivedSha256": "f90884630f547e766f31a5eba39bea44ed59778abad076f8aea5ae3d16a15446",
+    "note": "Inspect-only source archive; main.js is formatted to preserve source-line provenance."
+  },
+  {
+    "file": "research/original/google-fonts.css",
+    "source": "https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Google+Sans+Code:wght@400;700&family=Google+Sans+Flex:wght@500&family=Inter:wght@400;500;600&family=Newsreader:wght@400;500&display=swap",
+    "archivedBytes": 2279,
+    "archivedSha256": "6011604add304cdaba84946436e608f5ce8f17f03cc2080cb12bc06fb6f1caee",
+    "note": "Inspect-only source archive; main.js is formatted to preserve source-line provenance."
+  },
+  {
+    "file": "research/original/autoScrollMode.js",
+    "source": "https://why.zero.university/assets/autoScrollMode-a9ywvrmh.js",
+    "archivedBytes": 3039,
+    "archivedSha256": "c99049793caf476bbb948b2ee7c0badc44877acc65af59534dfc4d64599ad99a",
+    "note": "Inspect-only source archive; main.js is formatted to preserve source-line provenance."
+  }
+]

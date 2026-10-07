@@ -1,3 +1,5 @@
+import extractedShader58 from "../shaders/CoinRing-extracted-58.vert.glsl?raw";
+import { interpolateShader } from "../rendering/ShaderMaterial";
 // Recovered behavior with explicit dynamic boundaries; see research/REVERSE_ENGINEERING.md.
 import {
   hy,
@@ -209,110 +211,24 @@ var Xy: any = [
 ].map(([e, t, n, r]: any): any => [e / Yy, 1 - (t + r) / Yy, n / Yy, r / Yy]);
 var Zy: any = 6;
 var Qy: any = 3;
-var $y: any = `
-  attribute vec3 aOffset;
-  attribute vec3 aVelocity;
-  attribute float aPhase;
-  attribute vec4 aPetalRect;
-  attribute float aScale;
-  attribute vec2 aRotSpeed;
-
-  uniform float uTime;
-  uniform float uSwirlTime;
-  uniform vec3 uBounds;
-  uniform vec3 uBoundsCenter;
-  uniform float uEntry;
-
-  varying vec2 vUv;
-  varying vec4 vPetalRect;
-  varying float vOpacity;
-  varying float vBrightness;
-  varying float vSaturation;
-  varying float vFresnel;
-
-  vec3 wrapPos(vec3 p, vec3 b) {
-    return mod(p + b, 2.0 * b) - b;
-  }
-
-  void main() {
-    // --- Position pipeline operates in box-centered coords (cp),
-    // so wrap / swirl / fade are symmetric about the bounding box's
-    // center even when uBoundsCenter shifts the box off-origin.
-    vec3 cp = wrapPos(aOffset + aVelocity * uTime - uBoundsCenter, uBounds);
-
-    // --- Entry: petals start offset to the right, slide into swirl ---
-    float entryStagger = aPhase / 6.283;
-    float entryT = clamp((uEntry - entryStagger * 0.3) / 0.7, 0.0, 1.0);
-    float entryEase = entryT * entryT * (3.0 - 2.0 * entryT);
-    cp.x += (1.0 - entryEase) * uBounds.x * 3.0;
-
-    // --- Swirl: orbit around the box center (Y axis through uBoundsCenter).
-    // uSwirlTime (CPU-integrated dt * entryEase) instead of uTime * entryEase:
-    // multiplying raw elapsed time by the scroll-driven ease made the angle's
-    // sensitivity to a scroll step grow with time idled — minutes of sitting
-    // still turned the next scroll into a violent spin. The integral keeps
-    // d(angle)/d(scroll) zero; entry only ramps the swirl RATE. ---
-    float swirlAngle = uSwirlTime * (${Hy.toFixed(1)} + aPhase * ${Uy.toFixed(1)});
-    float cs = cos(swirlAngle), ss = sin(swirlAngle);
-    cp.xz = mat2(cs, -ss, ss, cs) * cp.xz;
-
-    // --- Turbulence: layered sine displacement for organic motion ---
-    cp.x += sin(cp.y * ${Gy.toFixed(1)} + uTime * ${Jy.toFixed(1)} + aPhase) * ${Wy.toFixed(3)} * entryEase;
-    cp.z += sin(cp.y * ${Ky.toFixed(1)} + uTime * ${Jy.toFixed(1)} * 0.9 + aPhase * 1.7) * ${Wy.toFixed(3)} * entryEase;
-    cp.y += sin(cp.x * ${qy.toFixed(1)} + uTime * ${Jy.toFixed(1)} * 0.7 + aPhase * 0.5) * ${Wy.toFixed(3)} * 0.5 * entryEase;
-
-    // --- Fade petals near bounding edges for soft wrap (all axes) ---
-    float fadeX = smoothstep(0.0, 0.3, (uBounds.x - abs(cp.x)) / uBounds.x);
-    float fadeY = smoothstep(0.0, 0.3, (uBounds.y - abs(cp.y)) / uBounds.y);
-    float fadeZ = smoothstep(0.0, 0.3, (uBounds.z - abs(cp.z)) / uBounds.z);
-    vOpacity = fadeX * fadeY * fadeZ;
-
-    // --- Shift back to world coordinates for downstream vertex math.
-    vec3 worldOffset = cp + uBoundsCenter;
-
-    // --- Early-out: collapse invisible petals behind camera ---
-    if (vOpacity < 0.001) {
-      gl_Position = vec4(0.0, 0.0, -2.0, 1.0);
-      return;
-    }
-
-    // --- Local vertex: scale + waviness (compute waveArg once) ---
-    vec3 pos = position * aScale;
-    float waveArg = position.x * ${zy.toFixed(1)} + uTime * ${By.toFixed(1)} + aPhase;
-    pos.z += sin(waveArg) * ${Vy.toFixed(2)} * aScale;
-
-    // --- Tumbling rotation (Ry * Rx) ---
-    float ax = aPhase + uTime * aRotSpeed.x;
-    float ay = aPhase * 1.3 + uTime * aRotSpeed.y;
-    float cx = cos(ax), sx = sin(ax);
-    float cy = cos(ay), sy = sin(ay);
-
-    mat3 rot = mat3(
-       cy,     sy * sx,  sy * cx,
-       0.0,    cx,      -sx,
-      -sy,     cy * sx,  cy * cx
-    );
-
-    pos = rot * pos;
-
-    // --- Fresnel: deformed normal → view dot for rim lighting ---
-    float dzdx = cos(waveArg) * ${zy.toFixed(1)} * ${Vy.toFixed(2)} * aScale;
-    vec3 worldNormal = normalize(rot * vec3(-dzdx, 0.0, 1.0));
-    vec3 worldPos = (modelMatrix * vec4(pos + worldOffset, 1.0)).xyz;
-    vec3 viewDir = normalize(cameraPosition - worldPos);
-    float f = 1.0 - abs(dot(worldNormal, viewDir));
-    vFresnel = f * f;
-
-    pos += worldOffset;
-
-    vUv = uv;
-    vPetalRect = aPetalRect;
-    vBrightness = 0.7 + fract(aPhase * 3.17) * 0.6;
-    vSaturation = 0.6 + fract(aPhase * 5.43) * 0.8;
-
-    gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
-  }
-`;
+var $y: any = interpolateShader(extractedShader58, {
+  __ZERO_PARAM_0__: Hy.toFixed(1),
+  __ZERO_PARAM_1__: Uy.toFixed(1),
+  __ZERO_PARAM_2__: Gy.toFixed(1),
+  __ZERO_PARAM_3__: Jy.toFixed(1),
+  __ZERO_PARAM_4__: Wy.toFixed(3),
+  __ZERO_PARAM_5__: Ky.toFixed(1),
+  __ZERO_PARAM_6__: Jy.toFixed(1),
+  __ZERO_PARAM_7__: Wy.toFixed(3),
+  __ZERO_PARAM_8__: qy.toFixed(1),
+  __ZERO_PARAM_9__: Jy.toFixed(1),
+  __ZERO_PARAM_10__: Wy.toFixed(3),
+  __ZERO_PARAM_11__: zy.toFixed(1),
+  __ZERO_PARAM_12__: By.toFixed(1),
+  __ZERO_PARAM_13__: Vy.toFixed(2),
+  __ZERO_PARAM_14__: zy.toFixed(1),
+  __ZERO_PARAM_15__: Vy.toFixed(2),
+});
 var eb: any = shaderSource28;
 export {
   gy,

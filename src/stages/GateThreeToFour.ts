@@ -1,3 +1,11 @@
+import { trackPatchedMaterial } from "../rendering/ShaderMaterial";
+import extractedShader67 from "../shaders/GateThreeToFour-extracted-67.chunk.glsl?raw";
+import extractedShader68 from "../shaders/GateThreeToFour-extracted-68.chunk.glsl?raw";
+import extractedShader61 from "../shaders/GateThreeToFour-extracted-61.chunk.glsl?raw";
+import extractedShader62 from "../shaders/GateThreeToFour-extracted-62.chunk.glsl?raw";
+import extractedShader63 from "../shaders/GateThreeToFour-extracted-63.chunk.glsl?raw";
+import extractedShader64 from "../shaders/GateThreeToFour-extracted-64.chunk.glsl?raw";
+import extractedShader65 from "../shaders/GateThreeToFour-extracted-65.chunk.glsl?raw";
 import { Wx } from "../config/tunnel.ts";
 import { Hx } from "../config/tunnel.ts";
 import { Ux } from "../config/tunnel.ts";
@@ -22,7 +30,6 @@ import {
 } from "three";
 import { kx, Mx, Fx, Ix } from "../rendering/TunnelMaterials.ts";
 import shaderSource41 from "../shaders/GateThreeToFour-chunk-41.frag.glsl?raw";
-import "./StageThree.ts";
 import shaderSource42 from "../shaders/GateThreeToFour-chunk-42.frag.glsl?raw";
 import { audioManager } from "../audio/AudioManager.ts";
 import { setPassTexture } from "../rendering/textureUtils.ts";
@@ -189,52 +196,19 @@ function cS(this: any, e?: any, t?: any): any {
   e.uniforms.uBandOrigin = t.uBandOrigin;
   e.vertexShader = e.vertexShader.replace(
     `#include <common>`,
-    `#include <common>
-varying float vTunnelZ;`,
+    extractedShader61,
   );
   e.vertexShader = e.vertexShader.replace(
     `#include <begin_vertex>`,
-    `#include <begin_vertex>
-vTunnelZ = (modelMatrix * vec4(transformed, 1.0)).z;`,
+    extractedShader67,
   );
   e.fragmentShader = e.fragmentShader.replace(
     `#include <common>`,
-    `#include <common>
-varying float vTunnelZ;
-uniform float uPulseTime;
-uniform float uPulseFreq;
-uniform float uPulseWidth;
-uniform float uPulseGain;
-uniform float uPlaneGlowZ;
-uniform float uPlaneGlowStrength;
-uniform float uPlaneGlowWidth;
-uniform vec3 uPlaneGlowColor;
-uniform float uBandFreq;
-uniform float uBandWidth;
-uniform float uBandStrength;
-uniform float uBandPhase;
-uniform float uBandTransparent;
-uniform float uBandOrigin;`,
+    extractedShader62,
   );
   e.fragmentShader = e.fragmentShader.replace(
     `#include <emissivemap_fragment>`,
-    `#include <emissivemap_fragment>
-    {
-      // Band centre at fract()==0, travelling toward -Z (out of the tunnel,
-      // toward the viewer) as time grows; min(q, 1-q) is the wrap-seamless
-      // distance to the centre.
-      float q = fract(vTunnelZ * uPulseFreq + uPulseTime);
-      float bd = min(q, 1.0 - q);
-      float band = 1.0 - smoothstep(0.0, uPulseWidth, bd);
-      totalEmissiveRadiance *= 1.0 + uPulseGain * band;
-    }
-    {
-      // Glow ring at the exit plane's world Z — ADDS uPlaneGlowColor emissive
-      // in a band around uPlaneGlowZ, brightening as the plane fades in.
-      float gd = abs(vTunnelZ - uPlaneGlowZ);
-      float gband = 1.0 - smoothstep(0.0, uPlaneGlowWidth, gd);
-      totalEmissiveRadiance += uPlaneGlowColor * (uPlaneGlowStrength * gband);
-    }`,
+    extractedShader63,
   );
   e.fragmentShader = e.fragmentShader.replace(
     `#include <dithering_fragment>`,
@@ -355,20 +329,15 @@ function uS(this: any, e?: any): any {
             };
             e.vertexShader = e.vertexShader.replace(
               `#include <common>`,
-              `#include <common>
-varying float vModelZ;`,
+              extractedShader64,
             );
             e.vertexShader = e.vertexShader.replace(
               `#include <begin_vertex>`,
-              `#include <begin_vertex>
-vModelZ = position.y;`,
+              extractedShader68,
             );
             e.fragmentShader = e.fragmentShader.replace(
               `#include <common>`,
-              `#include <common>
-varying float vModelZ;
-uniform float uFadeZMin;
-uniform float uFadeZEnd;`,
+              extractedShader65,
             );
             e.fragmentShader = e.fragmentShader.replace(
               `#include <dithering_fragment>`,
@@ -376,6 +345,7 @@ uniform float uFadeZEnd;`,
             );
           };
           t.customProgramCacheKey = (): any => `tunnel-entrance-fade`;
+          trackPatchedMaterial(t);
           e.material = t;
           n.push(t);
           o.push(e);
@@ -420,6 +390,7 @@ uniform float uFadeZEnd;`,
       e.opacity = 0;
       e.onBeforeCompile = (e?: any): any => cS(e, r);
       e.customProgramCacheKey = (): any => `tunnel-pulse`;
+      trackPatchedMaterial(e);
       n.push(e);
       for (let t: any = 1; t < oS; t++) {
         let n: any = a.clone();

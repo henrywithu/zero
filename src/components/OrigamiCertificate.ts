@@ -1,3 +1,5 @@
+import { trackPatchedMaterial } from "../rendering/ShaderMaterial";
+import extractedShader60 from "../shaders/OrigamiCertificate-extracted-60.chunk.glsl?raw";
 // Recovered behavior with explicit dynamic boundaries; see research/REVERSE_ENGINEERING.md.
 import {
   CanvasTexture,
@@ -107,15 +109,11 @@ function _T(
     (a.onBeforeCompile = (e?: any): any => {
       e.fragmentShader = e.fragmentShader.replace(
         `#include <emissivemap_fragment>`,
-        `#include <emissivemap_fragment>
-        // Darken the printed art in the folds with the baked AO, sampled on
-        // its own UV set (vAoMapUv). Standard AO-intensity remap: aoMapIntensity
-        // 1 = full effect, 0 = none.
-        float _ao = texture2D( aoMap, vAoMapUv ).r;
-        totalEmissiveRadiance *= 1.0 + ( _ao - 1.0 ) * aoMapIntensity;`,
+        extractedShader60,
       );
     }),
     (a.customProgramCacheKey = (): any => `cert-ao`));
+  trackPatchedMaterial(a);
   return a;
 }
 export { aT, oT, sT, cT, lT, uT, dT, fT, pT, mT, hT, gT, _T };

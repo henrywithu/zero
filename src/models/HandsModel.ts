@@ -1,3 +1,5 @@
+import { trackPatchedMaterial } from "../rendering/ShaderMaterial";
+import extractedShader59 from "../shaders/HandsModel-extracted-59.chunk.glsl?raw";
 // Recovered behavior with explicit dynamic boundaries; see research/REVERSE_ENGINEERING.md.
 import { AnimatedModel, qv } from "./AnimatedModel.ts";
 import { MeshMatcapMaterial, Vector2 } from "three";
@@ -93,17 +95,14 @@ var HandsModel = class extends AnimatedModel {
       e.uniforms.uRippleHw = u.uRippleHw;
       e.fragmentShader = e.fragmentShader.replace(
         `#include <common>`,
-        `#include <common>
-        uniform float uRippleTime;
-        uniform float uRippleIntensity;
-        uniform vec2  uRippleResolution;
-        uniform float uRippleHw;`,
+        extractedShader59,
       );
       e.fragmentShader = e.fragmentShader.replace(
         `#include <dithering_fragment>`,
         shaderSource27,
       );
     };
+    trackPatchedMaterial(l);
     this.ethHandRef = null;
     n.traverse((e?: any): any => {
       (e.isMesh || e.isSkinnedMesh) &&

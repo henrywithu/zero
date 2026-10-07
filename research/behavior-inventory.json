@@ -1,0 +1,2186 @@
+{
+  "stages": [
+    {
+      "file": "src/rendering/LensBlurPass.ts",
+      "line": 178,
+      "id": "`stage1`",
+      "label": "`-100 BZ`"
+    },
+    {
+      "file": "src/rendering/LensBlurPass.ts",
+      "line": 182,
+      "id": "`stage2`",
+      "label": "`-75 BZ`"
+    },
+    {
+      "file": "src/rendering/LensBlurPass.ts",
+      "line": 186,
+      "id": "`stage3`",
+      "label": "`-50 BZ`"
+    },
+    {
+      "file": "src/rendering/LensBlurPass.ts",
+      "line": 190,
+      "id": "`stage4`",
+      "label": "`-25 BZ`"
+    },
+    {
+      "file": "src/rendering/LensBlurPass.ts",
+      "line": 194,
+      "id": "`stage5`",
+      "label": "`0 BZ`"
+    },
+    {
+      "file": "src/stages/GateOneToTwo.ts",
+      "line": 296,
+      "id": "`gate1to2`",
+      "scrollVh": "50",
+      "autoScroll": "!0",
+      "autoScrollDuration": "Jb",
+      "fastForwardPreRoll": "3"
+    },
+    {
+      "file": "src/stages/GateThreeToFour.ts",
+      "line": 443,
+      "id": "`gate3to4`",
+      "scrollVh": "50",
+      "autoScroll": "!0",
+      "autoScrollDuration": "3"
+    },
+    {
+      "file": "src/stages/GateZeroToOne.ts",
+      "line": 125,
+      "id": "`gate0to1`",
+      "scrollVh": "50",
+      "autoScroll": "!0",
+      "autoScrollDuration": "3.5"
+    },
+    {
+      "file": "src/stages/MapStages.ts",
+      "line": 83,
+      "id": "`stage4`",
+      "scrollVh": "368",
+      "autoScroll": "!1",
+      "advanceAtEnd": "!0",
+      "advanceThreshold": "0.99"
+    },
+    {
+      "file": "src/stages/MapStages.ts",
+      "line": 329,
+      "id": "`gate4to5`",
+      "scrollVh": "50",
+      "autoScroll": "!0",
+      "autoScrollDuration": "0"
+    },
+    {
+      "file": "src/stages/MapStages.ts",
+      "line": 335,
+      "id": "`stage5`",
+      "scrollVh": "50",
+      "autoScroll": "!1"
+    },
+    {
+      "file": "src/stages/StageOne.ts",
+      "line": 116,
+      "id": "`stage1`",
+      "scrollVh": "175",
+      "autoScroll": "!1"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 125,
+      "id": "`stage3`",
+      "scrollVh": "325",
+      "autoScroll": "!1",
+      "deferPreviousTeardown": "!0"
+    },
+    {
+      "file": "src/stages/StageTwo.ts",
+      "line": 6,
+      "id": "`stage2`",
+      "scrollVh": "250",
+      "autoScroll": "!1",
+      "advanceAtEnd": "!0",
+      "advanceThreshold": "0.99"
+    }
+  ],
+  "texts": [
+    {
+      "file": "src/stages/GateOneToTwo.ts",
+      "line": 216,
+      "texture": "c",
+      "atlasUV": "atlasUv(1092.93, 558.45, 945.23, 371.64)",
+      "aspect": "atlasAspect(945.23, 371.64)",
+      "baseScale": "0.4",
+      "anchor": "`center-center`",
+      "appearAt": "0",
+      "disappearAt": "0.2"
+    },
+    {
+      "file": "src/stages/GateOneToTwo.ts",
+      "line": 316,
+      "texture": "t",
+      "atlasUV": "atlasUv(257.75, 558.45, 247.06, 165.84)",
+      "aspect": "atlasAspect(247.06, 165.84)",
+      "baseScale": "0.15",
+      "anchor": "`center-center`",
+      "appearAt": "1",
+      "disappearAt": "2"
+    },
+    {
+      "file": "src/stages/GateZeroToOne.ts",
+      "line": 74,
+      "texture": "d",
+      "atlasUV": "atlasUv(0, 0, 775.26, 371.64)",
+      "aspect": "atlasAspect(775.26, 371.64)",
+      "baseScale": "0.4",
+      "anchor": "`center-center`",
+      "appearAt": "0",
+      "disappearAt": "0.02"
+    },
+    {
+      "file": "src/stages/GateZeroToOne.ts",
+      "line": 83,
+      "texture": "d",
+      "atlasUV": "atlasUv(1703.34, 0, 557.46, 341.94, !0)",
+      "aspect": "atlasAspect(557.46, 341.94)",
+      "rotate": "!0",
+      "baseScale": "0.25",
+      "anchor": "`top-left`",
+      "appearAt": "0.2",
+      "disappearAt": "0.6"
+    },
+    {
+      "file": "src/stages/GateZeroToOne.ts",
+      "line": 93,
+      "texture": "d",
+      "atlasUV": "atlasUv(0, 558.45, 257.05, 185.82)",
+      "aspect": "atlasAspect(257.05, 185.82)",
+      "baseScale": "0.17",
+      "anchor": "`bottom-right`",
+      "appearAt": "0.3",
+      "disappearAt": "0.6"
+    },
+    {
+      "file": "src/stages/GateZeroToOne.ts",
+      "line": 102,
+      "texture": "d",
+      "atlasUV": "atlasUv(1388.64, 0, 557.46, 314.15, !0)",
+      "aspect": "atlasAspect(557.46, 314.15)",
+      "rotate": "!0",
+      "baseScale": "0.175",
+      "anchor": "`center-center`",
+      "appearAt": "0.6",
+      "disappearAt": "0.95"
+    },
+    {
+      "file": "src/stages/MapStages.ts",
+      "line": 231,
+      "texture": "h",
+      "atlasUV": "atlasUv(e, t, n, r)",
+      "aspect": "atlasAspect(n, r)",
+      "baseScale": "0.35",
+      "anchor": "`center-center`",
+      "appearAt": "o[i][0]",
+      "disappearAt": "o[i][1]"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 282,
+      "texture": "h",
+      "atlasUV": "atlasUv(0, 371.64, 365.21, 186.82)",
+      "aspect": "atlasAspect(365.21, 186.82)",
+      "baseScale": "0.25",
+      "anchor": "`bottom-left`",
+      "appearAt": "0.05",
+      "disappearAt": "0.3"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 291,
+      "texture": "h",
+      "atlasUV": "atlasUv(505.51, 604.41, 594.62, 355.65)",
+      "aspect": "atlasAspect(594.62, 355.65)",
+      "baseScale": "0.4",
+      "anchor": "`center-center`",
+      "appearAt": "0.3",
+      "disappearAt": "0.4"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 300,
+      "texture": "h",
+      "atlasUV": "atlasUv(363.64, 371.64, 337.74, 186.82)",
+      "aspect": "atlasAspect(337.74, 186.82)",
+      "baseScale": "0.25",
+      "anchor": "`top-left`",
+      "appearAt": "0.4",
+      "disappearAt": "0.6"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 309,
+      "texture": "h",
+      "atlasUV": "atlasUv(0, 1023, 482.83, 168.84)",
+      "aspect": "atlasAspect(482.83, 168.84)",
+      "baseScale": "0.25",
+      "anchor": "`bottom-right`",
+      "appearAt": "0.5",
+      "disappearAt": "0.6"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 318,
+      "texture": "h",
+      "atlasUV": "atlasUv(0, 744.27, 472.68, 278.73)",
+      "aspect": "atlasAspect(472.68, 278.73)",
+      "baseScale": "0.25",
+      "anchor": "`center-center`",
+      "appearAt": "0.6",
+      "disappearAt": "0.7"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 327,
+      "texture": "h",
+      "atlasUV": "atlasUv(775.24, 0, 521.92, 325.68)",
+      "aspect": "atlasAspect(521.92, 325.68)",
+      "baseScale": "0.38",
+      "anchor": "`center-center`",
+      "appearAt": "0.7",
+      "disappearAt": "0.8"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 336,
+      "texture": "h",
+      "atlasUV": "atlasUv(771, 1542, 667, 221)",
+      "aspect": "atlasAspect(667, 221)",
+      "baseScale": "0.38",
+      "anchor": "`center-center`",
+      "appearAt": "0.8",
+      "disappearAt": "0.87"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 345,
+      "texture": "h",
+      "atlasUV": "atlasUv(700.32, 371.64, 331.52, 232.77)",
+      "aspect": "atlasAspect(331.52, 232.77)",
+      "baseScale": "0.25",
+      "anchor": "`top-left`",
+      "appearAt": "0.87",
+      "disappearAt": "0.99"
+    },
+    {
+      "file": "src/stages/StageThree.ts",
+      "line": 354,
+      "texture": "h",
+      "atlasUV": "atlasUv(1030.99, 325.68, 334.61, 232.77)",
+      "aspect": "atlasAspect(334.61, 232.77)",
+      "baseScale": "0.25",
+      "anchor": "`bottom-right`",
+      "appearAt": "0.93",
+      "disappearAt": "0.99"
+    }
+  ],
+  "audio": [
+    {
+      "id": "stage1-ambient",
+      "src": "`${Sg}assets/audio/amb_stage1.mp3`",
+      "type": "`ambient`",
+      "loop": "!0",
+      "volume": "0.55",
+      "fadeIn": "1.5",
+      "fadeOut": "2.5",
+      "preload": "!0",
+      "startOn": "`firstTouch`"
+    },
+    {
+      "id": "stage2-ambient",
+      "src": "`${Sg}assets/audio/amb_stage2-3.mp3`",
+      "type": "`ambient`",
+      "loop": "!0",
+      "volume": "0.55",
+      "fadeIn": "2",
+      "fadeOut": "1.5",
+      "preload": "!0"
+    },
+    {
+      "id": "loader-drag",
+      "src": "`${Sg}assets/audio/fx_loader-drag.mp3`",
+      "type": "`fx`",
+      "loop": "!0",
+      "volume": "0.255",
+      "fadeIn": "0.12",
+      "fadeOut": "0.25",
+      "preload": "!0"
+    },
+    {
+      "id": "hand-entry",
+      "src": "`${Sg}assets/audio/fx_hand-entry.mp3`",
+      "type": "`fx`",
+      "loop": "!1",
+      "volume": "0.8",
+      "fadeIn": "0",
+      "fadeOut": "0.1",
+      "preload": "!0"
+    },
+    {
+      "id": "whoosh",
+      "src": "`${Sg}assets/audio/fx_whoosh.mp3`",
+      "type": "`fx`",
+      "loop": "!1",
+      "volume": "0.6",
+      "fadeIn": "0",
+      "fadeOut": "0.1",
+      "preload": "!0",
+      "muffleable": "!1"
+    },
+    {
+      "id": "click",
+      "src": "`${Sg}assets/audio/fx_click.mp3`",
+      "type": "`fx`",
+      "loop": "!1",
+      "volume": "0.25",
+      "fadeIn": "0",
+      "fadeOut": "0.05",
+      "preload": "!0",
+      "muffleable": "!1"
+    },
+    {
+      "id": "loader",
+      "src": "`${Sg}assets/audio/fx_loader.mp3`",
+      "type": "`fx`",
+      "loop": "!1",
+      "volume": "0.8",
+      "fadeIn": "0",
+      "fadeOut": "0.1",
+      "preload": "!0"
+    },
+    {
+      "id": "xp-topup",
+      "src": "`${Sg}assets/audio/fx_xp-topup.mp3`",
+      "type": "`fx`",
+      "loop": "!1",
+      "volume": "0.35",
+      "fadeIn": "0",
+      "fadeOut": "0.05",
+      "preload": "!0"
+    },
+    {
+      "id": "tunnel",
+      "src": "`${Sg}assets/audio/fx_tunnel.mp3`",
+      "type": "`fx`",
+      "loop": "!1",
+      "volume": "1",
+      "fadeIn": "0",
+      "fadeOut": "0.15",
+      "preload": "!0"
+    },
+    {
+      "id": "glass-shatter",
+      "src": "`${Sg}assets/audio/fx_glass-shatter.mp3`",
+      "type": "`fx`",
+      "loop": "!1",
+      "volume": "0.85",
+      "fadeIn": "0",
+      "fadeOut": "0.1",
+      "preload": "!0"
+    },
+    {
+      "id": "hold-button",
+      "src": "`${Sg}assets/audio/fx_hold-button.mp3`",
+      "type": "`fx`",
+      "loop": "!1",
+      "volume": "0.75",
+      "fadeIn": "0.04",
+      "fadeOut": "0.08",
+      "preload": "!0",
+      "holdRateScale": "0.75"
+    },
+    {
+      "id": "money-burn",
+      "src": "`${Sg}assets/audio/fx_money-burn.mp3`",
+      "type": "`fx`",
+      "loop": "!0",
+      "volume": "0.05",
+      "fadeIn": "0.05",
+      "fadeOut": "0.25",
+      "preload": "!1"
+    },
+    {
+      "id": "stage4-ambient",
+      "src": "`${Sg}assets/audio/amb_stage4-5.mp3`",
+      "type": "`ambient`",
+      "loop": "!0",
+      "volume": "1",
+      "fadeIn": "2",
+      "fadeOut": "1.5",
+      "preload": "!0"
+    },
+    {
+      "id": "stage5-ambient",
+      "src": "`${Sg}assets/audio/amb_stage5.mp3`",
+      "type": "`ambient`",
+      "loop": "!0",
+      "volume": "0.7",
+      "fadeIn": "2",
+      "fadeOut": "1.5",
+      "preload": "!0"
+    }
+  ],
+  "shaders": [
+    {
+      "name": "BackgroundPass-c_-1.vert.glsl",
+      "binding": "shaderSource1",
+      "component": "rendering/BackgroundPass",
+      "line": 37452,
+      "type": "vert",
+      "sha256": "428ef5240e206bd9e86321cb2d9bf586489f2fdce09a12a29909111d2864552b",
+      "uniforms": []
+    },
+    {
+      "name": "BackgroundPass-l_-2.frag.glsl",
+      "binding": "shaderSource2",
+      "component": "rendering/BackgroundPass",
+      "line": 37459,
+      "type": "frag",
+      "sha256": "6dfcd4a02ca17a9f017b18a8d291b43abc4015b72cb84f85e70538bfb03b404d",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tDiffuse"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uTextureA"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uTextureB"
+        },
+        {
+          "type": "float",
+          "name": "uProgress"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        },
+        {
+          "type": "float",
+          "name": "uLinearizeA"
+        },
+        {
+          "type": "float",
+          "name": "uLinearizeB"
+        },
+        {
+          "type": "vec2",
+          "name": "uCoverScaleA"
+        },
+        {
+          "type": "vec2",
+          "name": "uCoverScaleB"
+        },
+        {
+          "type": "float",
+          "name": "uZoom"
+        },
+        {
+          "type": "float",
+          "name": "uParallaxOn"
+        },
+        {
+          "type": "float",
+          "name": "uParallaxSlot"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uAtlas"
+        },
+        {
+          "type": "vec2",
+          "name": "uAtlasCell"
+        },
+        {
+          "type": "vec2",
+          "name": "uAtlasInset"
+        },
+        {
+          "type": "vec2",
+          "name": "uParallax"
+        },
+        {
+          "type": "float",
+          "name": "uParallaxAmp"
+        },
+        {
+          "type": "vec2",
+          "name": "uBgParallax"
+        },
+        {
+          "type": "float",
+          "name": "uBgParallaxAmp"
+        },
+        {
+          "type": "float",
+          "name": "uViewportAspect"
+        },
+        {
+          "type": "vec4",
+          "name": "uLayerRect"
+        },
+        {
+          "type": "vec2",
+          "name": "uLayerHalfSize"
+        },
+        {
+          "type": "vec2",
+          "name": "uLayerCenter"
+        },
+        {
+          "type": "float",
+          "name": "uLayerDepth"
+        },
+        {
+          "type": "float",
+          "name": "uGardenBright"
+        },
+        {
+          "type": "float",
+          "name": "uGardenWhitewash"
+        },
+        {
+          "type": "float",
+          "name": "uGardenBloom"
+        }
+      ]
+    },
+    {
+      "name": "ForegroundPass-m_-3.vert.glsl",
+      "binding": "shaderSource3",
+      "component": "rendering/ForegroundPass",
+      "line": 37714,
+      "type": "vert",
+      "sha256": "428ef5240e206bd9e86321cb2d9bf586489f2fdce09a12a29909111d2864552b",
+      "uniforms": []
+    },
+    {
+      "name": "ForegroundPass-h_-4.frag.glsl",
+      "binding": "shaderSource4",
+      "component": "rendering/ForegroundPass",
+      "line": 37721,
+      "type": "frag",
+      "sha256": "c2064701f8dab3e32ae5cf6870f485136ca10d95e7b01b95c73486b60b8875fb",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tDiffuse"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uOverlayTextureA"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uOverlayTextureB"
+        },
+        {
+          "type": "float",
+          "name": "uProgress"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        },
+        {
+          "type": "float",
+          "name": "uEnableOverlay"
+        },
+        {
+          "type": "float",
+          "name": "uOverlayCenterReveal"
+        },
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "float",
+          "name": "uEnableNoise"
+        },
+        {
+          "type": "float",
+          "name": "uNoiseStrength"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uNoiseTex"
+        },
+        {
+          "type": "vec2",
+          "name": "uNoiseOffset"
+        },
+        {
+          "type": "vec2",
+          "name": "uCoverScaleA"
+        },
+        {
+          "type": "vec2",
+          "name": "uCoverScaleB"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uGodRaysTex1"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uGodRaysTex2"
+        },
+        {
+          "type": "float",
+          "name": "uGodRaysBlend"
+        },
+        {
+          "type": "vec2",
+          "name": "uGodRaysCoverScale1"
+        },
+        {
+          "type": "vec2",
+          "name": "uGodRaysCoverScale2"
+        },
+        {
+          "type": "vec4",
+          "name": "uGodRaysRect1"
+        },
+        {
+          "type": "vec4",
+          "name": "uGodRaysRect2"
+        },
+        {
+          "type": "float",
+          "name": "uGodRaysOpacity"
+        },
+        {
+          "type": "float",
+          "name": "uEnableGodRays"
+        },
+        {
+          "type": "float",
+          "name": "uRippleTime"
+        },
+        {
+          "type": "float",
+          "name": "uRippleStrength"
+        },
+        {
+          "type": "float",
+          "name": "uRippleHw"
+        },
+        {
+          "type": "float",
+          "name": "uViewportAspect"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uHoverFrostTex"
+        },
+        {
+          "type": "vec2",
+          "name": "uHoverPos"
+        },
+        {
+          "type": "float",
+          "name": "uHoverRadius"
+        },
+        {
+          "type": "float",
+          "name": "uHoverIntensity"
+        },
+        {
+          "type": "float",
+          "name": "uHoverGlow"
+        },
+        {
+          "type": "vec2",
+          "name": "uHoverFrostCoverScale"
+        },
+        {
+          "type": "float",
+          "name": "uExposure"
+        },
+        {
+          "type": "float",
+          "name": "uContrast"
+        },
+        {
+          "type": "float",
+          "name": "uSaturation"
+        },
+        {
+          "type": "float",
+          "name": "uRedTint"
+        }
+      ]
+    },
+    {
+      "name": "TextPass-S_-5.vert.glsl",
+      "binding": "shaderSource5",
+      "component": "rendering/TextPass",
+      "line": 38121,
+      "type": "vert",
+      "sha256": "f17bce369a5a90d1926535016f4d35e4482975a01846a0f482641e3405b3ebc7",
+      "uniforms": []
+    },
+    {
+      "name": "TextPass-C_-6.frag.glsl",
+      "binding": "shaderSource6",
+      "component": "rendering/TextPass",
+      "line": 38128,
+      "type": "frag",
+      "sha256": "b5ac90565b6ef3122925e5a1db443a8568c33bb040e788a2b189bff6e5b20d4a",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tDiffuse"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uTextTexture"
+        },
+        {
+          "type": "float",
+          "name": "uBrightness"
+        },
+        {
+          "type": "float",
+          "name": "uSaturation"
+        }
+      ]
+    },
+    {
+      "name": "FrostingPass-E_-7.vert.glsl",
+      "binding": "shaderSource7",
+      "component": "rendering/FrostingPass",
+      "line": 38273,
+      "type": "vert",
+      "sha256": "f17bce369a5a90d1926535016f4d35e4482975a01846a0f482641e3405b3ebc7",
+      "uniforms": []
+    },
+    {
+      "name": "FrostingPass-D_-8.frag.glsl",
+      "binding": "shaderSource8",
+      "component": "rendering/FrostingPass",
+      "line": 38280,
+      "type": "frag",
+      "sha256": "231bccabac26a827ab7108f8448b6af03101e8dac38d08fbaad6ccb005f21179",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uPrevTrail"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uFrostTexture"
+        },
+        {
+          "type": "float",
+          "name": "uHasFrostTexture"
+        },
+        {
+          "type": "vec2",
+          "name": "uFrostCoverScale"
+        },
+        {
+          "type": "vec2",
+          "name": "uCursorUV"
+        },
+        {
+          "type": "float",
+          "name": "uCursorRadius"
+        },
+        {
+          "type": "float",
+          "name": "uFade"
+        },
+        {
+          "type": "float",
+          "name": "uHeadFade"
+        },
+        {
+          "type": "float",
+          "name": "uAspect"
+        },
+        {
+          "type": "float",
+          "name": "uCursorActive"
+        },
+        {
+          "type": "float",
+          "name": "uCursorIntensity"
+        },
+        {
+          "type": "float",
+          "name": "uSpread"
+        },
+        {
+          "type": "float",
+          "name": "uSpreadStep"
+        },
+        {
+          "type": "vec2",
+          "name": "uSpreadAxis"
+        }
+      ]
+    },
+    {
+      "name": "FrostingPass-O_-9.frag.glsl",
+      "binding": "shaderSource9",
+      "component": "rendering/FrostingPass",
+      "line": 38363,
+      "type": "frag",
+      "sha256": "b1611a6a34127ce5f2eebe5859ac519ede61b81f76ac9827d278e03dc7e112e1",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uHeight"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexelSize"
+        },
+        {
+          "type": "float",
+          "name": "uStrength"
+        },
+        {
+          "type": "float",
+          "name": "uSampleStride"
+        }
+      ]
+    },
+    {
+      "name": "FrostingPass-k_-10.vert.glsl",
+      "binding": "shaderSource10",
+      "component": "rendering/FrostingPass",
+      "line": 38397,
+      "type": "vert",
+      "sha256": "f17bce369a5a90d1926535016f4d35e4482975a01846a0f482641e3405b3ebc7",
+      "uniforms": []
+    },
+    {
+      "name": "FrostingPass-A_-11.frag.glsl",
+      "binding": "shaderSource11",
+      "component": "rendering/FrostingPass",
+      "line": 38404,
+      "type": "frag",
+      "sha256": "f5c86df728222958845e8f9a4da9092f1b36f13bdef37ed319a75fcfa7c9031c",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tDiffuse"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uTrailTexture"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uFrostTexture"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uIceNormalTxt"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        },
+        {
+          "type": "float",
+          "name": "uWhiteout"
+        },
+        {
+          "type": "float",
+          "name": "uTrailWhite"
+        },
+        {
+          "type": "float",
+          "name": "uMelt"
+        },
+        {
+          "type": "float",
+          "name": "uCenterWhite"
+        },
+        {
+          "type": "float",
+          "name": "uLightIntensity"
+        },
+        {
+          "type": "vec2",
+          "name": "uFrostCoverScale"
+        },
+        {
+          "type": "float",
+          "name": "uHasFrostTexture"
+        },
+        {
+          "type": "float",
+          "name": "uHasIceNormal"
+        },
+        {
+          "type": "float",
+          "name": "uLoadProgress"
+        },
+        {
+          "type": "float",
+          "name": "uDisplacement"
+        },
+        {
+          "type": "float",
+          "name": "uAspect"
+        },
+        {
+          "type": "vec2",
+          "name": "uNormalBias"
+        },
+        {
+          "type": "vec2",
+          "name": "uFrostShift"
+        }
+      ]
+    },
+    {
+      "name": "ShatterPass-B_-12.vert.glsl",
+      "binding": "shaderSource12",
+      "component": "rendering/ShatterPass",
+      "line": 38951,
+      "type": "vert",
+      "sha256": "f17bce369a5a90d1926535016f4d35e4482975a01846a0f482641e3405b3ebc7",
+      "uniforms": []
+    },
+    {
+      "name": "ShatterPass-V_-13.frag.glsl",
+      "binding": "shaderSource13",
+      "component": "rendering/ShatterPass",
+      "line": 38958,
+      "type": "frag",
+      "sha256": "16c24f34285a611f3d8dbe1ff7161acbc9f7e4fcfc580447e4ea03c57f6aa4bc",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tDiffuse"
+        }
+      ]
+    },
+    {
+      "name": "ShatterPass-H_-14.vert.glsl",
+      "binding": "shaderSource14",
+      "component": "rendering/ShatterPass",
+      "line": 38966,
+      "type": "vert",
+      "sha256": "2e010d95d972f7243777408c496ea165af73ece5d1e0c188cd26fc3952f592b7",
+      "uniforms": []
+    },
+    {
+      "name": "ShatterPass-U_-15.frag.glsl",
+      "binding": "shaderSource15",
+      "component": "rendering/ShatterPass",
+      "line": 38978,
+      "type": "frag",
+      "sha256": "1a6f08c9492d01e12d625638de0202b07497078b8f834667a2f558ec424fa1ba",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uMapA"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uMapB"
+        },
+        {
+          "type": "float",
+          "name": "uBlend"
+        },
+        {
+          "type": "float",
+          "name": "uFresnelPower"
+        }
+      ]
+    },
+    {
+      "name": "ShatterPass-W_-16.frag.glsl",
+      "binding": "shaderSource16",
+      "component": "rendering/ShatterPass",
+      "line": 38994,
+      "type": "frag",
+      "sha256": "5c3b525333e68c254e7057c76f48538b0bed6a982b21aaef0359e04ce017557c",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tDiffuse"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uShatter"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uHandMask"
+        }
+      ]
+    },
+    {
+      "name": "GlassShardPass-K_-17.vert.glsl",
+      "binding": "shaderSource17",
+      "component": "rendering/GlassShardPass",
+      "line": 39333,
+      "type": "vert",
+      "sha256": "8988f80d35d2f2aabd1a0217989ce2f2a759add33c7141420283ad8719395c8b",
+      "uniforms": []
+    },
+    {
+      "name": "GlassShardPass-q_-18.frag.glsl",
+      "binding": "shaderSource18",
+      "component": "rendering/GlassShardPass",
+      "line": 39342,
+      "type": "frag",
+      "sha256": "1ee6c3a8c4917a5222d6b6c4a147ee138fd1601f4f54e31637c721468eb69493",
+      "uniforms": []
+    },
+    {
+      "name": "GlassShardPass-J_-19.frag.glsl",
+      "binding": "shaderSource19",
+      "component": "rendering/GlassShardPass",
+      "line": 39351,
+      "type": "frag",
+      "sha256": "7d3a3a87d3c69971d2361f0171664af8b12deb1d31f4a0132c5e76efab06de0e",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tDiffuse"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uNormalMask"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uRefractionMap"
+        },
+        {
+          "type": "float",
+          "name": "uRefraction"
+        },
+        {
+          "type": "float",
+          "name": "uDispersion"
+        },
+        {
+          "type": "float",
+          "name": "uMapStrength"
+        },
+        {
+          "type": "vec2",
+          "name": "uMapScale"
+        },
+        {
+          "type": "vec3",
+          "name": "uTintColor"
+        },
+        {
+          "type": "float",
+          "name": "uFresnelPower"
+        },
+        {
+          "type": "vec2",
+          "name": "uPixelSize"
+        },
+        {
+          "type": "float",
+          "name": "uEdgeHighlight"
+        }
+      ]
+    },
+    {
+      "name": "GlassShardPass-vertexShader-20.vert.glsl",
+      "binding": "shaderSource20",
+      "component": "rendering/GlassShardPass",
+      "line": 39457,
+      "type": "vert",
+      "sha256": "eb07243587689ca7655ba53064c66f3f4d5a945367df03ca35b54c0346069b4f",
+      "uniforms": []
+    },
+    {
+      "name": "LensBlurPass-X_-21.vert.glsl",
+      "binding": "shaderSource21",
+      "component": "rendering/LensBlurPass",
+      "line": 39616,
+      "type": "vert",
+      "sha256": "428ef5240e206bd9e86321cb2d9bf586489f2fdce09a12a29909111d2864552b",
+      "uniforms": []
+    },
+    {
+      "name": "LensBlurPass-Z_-22.frag.glsl",
+      "binding": "shaderSource22",
+      "component": "rendering/LensBlurPass",
+      "line": 39623,
+      "type": "frag",
+      "sha256": "3174ec1d811e9854e86c815f4d2f8be38ab924858faff3a3a2b2813dbe0f10cc",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tDiffuse"
+        },
+        {
+          "type": "vec2",
+          "name": "uHalfPixel"
+        }
+      ]
+    },
+    {
+      "name": "LensBlurPass-Q_-23.frag.glsl",
+      "binding": "shaderSource23",
+      "component": "rendering/LensBlurPass",
+      "line": 39638,
+      "type": "frag",
+      "sha256": "c425917396183ef0b1bed9c020f247f3e5ab997f9a261a6ae1d6d9a71ac67085",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tDiffuse"
+        },
+        {
+          "type": "vec2",
+          "name": "uHalfPixel"
+        }
+      ]
+    },
+    {
+      "name": "LensBlurPass-$_-24.frag.glsl",
+      "binding": "shaderSource24",
+      "component": "rendering/LensBlurPass",
+      "line": 39659,
+      "type": "frag",
+      "sha256": "21144b2b50e0ff96f207a331f31c018fcfdd43f042c8374b41fc90416584e8f0",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "tOriginal"
+        },
+        {
+          "type": "sampler2D",
+          "name": "tBlurred"
+        },
+        {
+          "type": "vec2",
+          "name": "uFocalPoint"
+        },
+        {
+          "type": "float",
+          "name": "uFocalRadius"
+        },
+        {
+          "type": "float",
+          "name": "uFalloff"
+        },
+        {
+          "type": "vec2",
+          "name": "uResolution"
+        }
+      ]
+    },
+    {
+      "name": "TextMaterial-Fv-25.vert.glsl",
+      "binding": "shaderSource25",
+      "component": "rendering/TextMaterial",
+      "line": 40333,
+      "type": "vert",
+      "sha256": "0aa602b4a1b27b27a20eaf34685831fb9d4fef8d22c64c394573459a50bb4d6a",
+      "uniforms": []
+    },
+    {
+      "name": "TextMaterial-Iv-26.frag.glsl",
+      "binding": "shaderSource26",
+      "component": "rendering/TextMaterial",
+      "line": 40347,
+      "type": "frag",
+      "sha256": "c75cce3a399d3618b59e7bea511382981092ce26a4c7aa688a16c5046fad3dd6",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uTextureA"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uTextureB"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexOffsetA"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexScaleA"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexOffsetB"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexScaleB"
+        },
+        {
+          "type": "float",
+          "name": "uProgress"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uAlphaMap"
+        },
+        {
+          "type": "vec2",
+          "name": "uAlphaOffset"
+        },
+        {
+          "type": "vec2",
+          "name": "uAlphaScale"
+        },
+        {
+          "type": "float",
+          "name": "uRippleTime"
+        },
+        {
+          "type": "float",
+          "name": "uRippleIntensity"
+        },
+        {
+          "type": "vec2",
+          "name": "uRippleResolution"
+        },
+        {
+          "type": "float",
+          "name": "uRippleHw"
+        }
+      ]
+    },
+    {
+      "name": "HandsModel-chunk-27.frag.glsl",
+      "binding": "shaderSource27",
+      "component": "models/HandsModel",
+      "line": 40772,
+      "type": "frag",
+      "sha256": "356e42219e5dbd3867fe885d8cd6955a22ef14a7aaae6b92772227b84c0bb26e",
+      "uniforms": []
+    },
+    {
+      "name": "CoinRing-eb-28.frag.glsl",
+      "binding": "shaderSource28",
+      "component": "models/CoinRing",
+      "line": 41171,
+      "type": "frag",
+      "sha256": "0bb4b14069ae4b5248bf145efa28fb89be6fa18aea03f393c61c8c0d8512f284",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uAtlas"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        }
+      ]
+    },
+    {
+      "name": "PetalParticles-nb-29.vert.glsl",
+      "binding": "shaderSource29",
+      "component": "models/PetalParticles",
+      "line": 41301,
+      "type": "vert",
+      "sha256": "f17bce369a5a90d1926535016f4d35e4482975a01846a0f482641e3405b3ebc7",
+      "uniforms": []
+    },
+    {
+      "name": "PetalParticles-rb-30.frag.glsl",
+      "binding": "shaderSource30",
+      "component": "models/PetalParticles",
+      "line": 41308,
+      "type": "frag",
+      "sha256": "6904253a62cb64a50d11a677e4f8c6467fcf7332206761930db0ae9f31e49c92",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uTexture"
+        },
+        {
+          "type": "float",
+          "name": "uMaxBlur"
+        },
+        {
+          "type": "float",
+          "name": "uProgress"
+        },
+        {
+          "type": "vec2",
+          "name": "uAtlasOffset"
+        },
+        {
+          "type": "vec2",
+          "name": "uAtlasScale"
+        },
+        {
+          "type": "float",
+          "name": "uNoiseSeed"
+        },
+        {
+          "type": "float",
+          "name": "uAspect"
+        },
+        {
+          "type": "float",
+          "name": "uRotate"
+        }
+      ]
+    },
+    {
+      "name": "TextSprites-yb-31.vert.glsl",
+      "binding": "shaderSource31",
+      "component": "components/TextSprites",
+      "line": 41651,
+      "type": "vert",
+      "sha256": "cb2f26c89e0f26c64bd027733da6c71f318c7e5ff863687be88739476c009e2a",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "float",
+          "name": "uSeed"
+        },
+        {
+          "type": "float",
+          "name": "uWaveAmp"
+        },
+        {
+          "type": "float",
+          "name": "uWaveFreq"
+        }
+      ]
+    },
+    {
+      "name": "TextSprites-bb-32.frag.glsl",
+      "binding": "shaderSource32",
+      "component": "components/TextSprites",
+      "line": 41668,
+      "type": "frag",
+      "sha256": "dc4be04dfe1cd1683acd4292a00f2b7a663bcb27c3c23d4ea81e19a84dd8f88c",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uTexture"
+        },
+        {
+          "type": "float",
+          "name": "uBurnProgress"
+        },
+        {
+          "type": "float",
+          "name": "uBurnScale"
+        },
+        {
+          "type": "float",
+          "name": "uEmberWidth"
+        },
+        {
+          "type": "float",
+          "name": "uCharWidth"
+        },
+        {
+          "type": "float",
+          "name": "uBurnDirection"
+        },
+        {
+          "type": "float",
+          "name": "uAspect"
+        },
+        {
+          "type": "vec3",
+          "name": "uEmberColor"
+        },
+        {
+          "type": "vec3",
+          "name": "uEmberTip"
+        },
+        {
+          "type": "vec3",
+          "name": "uCharColor"
+        },
+        {
+          "type": "float",
+          "name": "uSeed"
+        },
+        {
+          "type": "float",
+          "name": "uBurnDelay"
+        },
+        {
+          "type": "float",
+          "name": "uBurnSpeed"
+        },
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexOffset"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexScale"
+        },
+        {
+          "type": "float",
+          "name": "uTexRotate"
+        }
+      ]
+    },
+    {
+      "name": "TunnelMaterials-wx-33.vert.glsl",
+      "binding": "shaderSource33",
+      "component": "rendering/TunnelMaterials",
+      "line": 43182,
+      "type": "vert",
+      "sha256": "d2bb94a20482ba543ad462f7ac0b69972ca18a56ef6099e778b881781829977c",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uShredProgress"
+        },
+        {
+          "type": "float",
+          "name": "uNumStrips"
+        },
+        {
+          "type": "float",
+          "name": "uWaviness"
+        },
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "float",
+          "name": "uSeed"
+        }
+      ]
+    },
+    {
+      "name": "TunnelMaterials-Tx-34.frag.glsl",
+      "binding": "shaderSource34",
+      "component": "rendering/TunnelMaterials",
+      "line": 43292,
+      "type": "frag",
+      "sha256": "10d65a04cd55884c12cf0955feb4de8f2786ed7ba93e89707df72b23b42679dc",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uTexture"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uMatcap"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        },
+        {
+          "type": "float",
+          "name": "uNumStrips"
+        },
+        {
+          "type": "float",
+          "name": "uMatcapStrength"
+        },
+        {
+          "type": "float",
+          "name": "uBrightness"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexOffset"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexScale"
+        }
+      ]
+    },
+    {
+      "name": "TunnelMaterials-Dx-35.vert.glsl",
+      "binding": "shaderSource35",
+      "component": "rendering/TunnelMaterials",
+      "line": 43404,
+      "type": "vert",
+      "sha256": "b1a8ef4eee7ea2c19ec1fbaba6736936370b3caba41fa90d05054d56324974e8",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uWaviness"
+        },
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "float",
+          "name": "uSeed"
+        }
+      ]
+    },
+    {
+      "name": "TunnelMaterials-Ox-36.frag.glsl",
+      "binding": "shaderSource36",
+      "component": "rendering/TunnelMaterials",
+      "line": 43442,
+      "type": "frag",
+      "sha256": "2ccbd8b4ad93bf3f83893cb7cf80ed188d2e754daa663f139e02066a305005cf",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uTexture"
+        },
+        {
+          "type": "sampler2D",
+          "name": "uMatcap"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        },
+        {
+          "type": "float",
+          "name": "uMatcapStrength"
+        },
+        {
+          "type": "float",
+          "name": "uBrightness"
+        },
+        {
+          "type": "float",
+          "name": "uSeed"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexOffset"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexScale"
+        }
+      ]
+    },
+    {
+      "name": "TunnelMaterials-Ax-37.vert.glsl",
+      "binding": "shaderSource37",
+      "component": "rendering/TunnelMaterials",
+      "line": 43548,
+      "type": "vert",
+      "sha256": "936e0a2a3d793a7414ed3244a18769544f254d4503986dfd38743f7c27ec0e19",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uPixelRatio"
+        },
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "float",
+          "name": "uZOffset"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        }
+      ]
+    },
+    {
+      "name": "TunnelMaterials-jx-38.frag.glsl",
+      "binding": "shaderSource38",
+      "component": "rendering/TunnelMaterials",
+      "line": 43568,
+      "type": "frag",
+      "sha256": "12bca7857c5b59af5ff996e1b485c999cddf8620f20621a288323dc364b7f6f8",
+      "uniforms": []
+    },
+    {
+      "name": "TunnelMaterials-Nx-39.vert.glsl",
+      "binding": "shaderSource39",
+      "component": "rendering/TunnelMaterials",
+      "line": 43593,
+      "type": "vert",
+      "sha256": "e8e11653a6f8a0f38baded84d71d3243a95a032d3c80a7070f4d691c6f910d72",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uPixelRatio"
+        },
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        }
+      ]
+    },
+    {
+      "name": "TunnelMaterials-Px-40.frag.glsl",
+      "binding": "shaderSource40",
+      "component": "rendering/TunnelMaterials",
+      "line": 43615,
+      "type": "frag",
+      "sha256": "20181d8bda03d2d2066dbbea465b0d0ee7fc82472afa51a123c535bab762f0c2",
+      "uniforms": []
+    },
+    {
+      "name": "GateThreeToFour-chunk-41.frag.glsl",
+      "binding": "shaderSource41",
+      "component": "stages/GateThreeToFour",
+      "line": 44649,
+      "type": "frag",
+      "sha256": "3855faf612691221faf2b5ebcfdea45baeb866ee9242fa470789690976736993",
+      "uniforms": []
+    },
+    {
+      "name": "GateThreeToFour-chunk-42.frag.glsl",
+      "binding": "shaderSource42",
+      "component": "stages/GateThreeToFour",
+      "line": 44762,
+      "type": "frag",
+      "sha256": "9e75863115cfd2a4cdd12aa33cd5a0418c4e31ff73334017cf6f90292923ee4b",
+      "uniforms": []
+    },
+    {
+      "name": "CloudField-zS-43.vert.glsl",
+      "binding": "shaderSource43",
+      "component": "models/CloudField",
+      "line": 45009,
+      "type": "vert",
+      "sha256": "330e58260ba256eaea2c6e51d7cc5d67bde2825d1674a7aaed0fc3c4964c5d42",
+      "uniforms": []
+    },
+    {
+      "name": "CloudField-BS-44.frag.glsl",
+      "binding": "shaderSource44",
+      "component": "models/CloudField",
+      "line": 45019,
+      "type": "frag",
+      "sha256": "29e118f08f78ccfdd589b05978303fb552a674d8f7363fc113626698de26423d",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uTexture"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexOffset"
+        },
+        {
+          "type": "vec2",
+          "name": "uTexScale"
+        }
+      ]
+    },
+    {
+      "name": "companies-$S-45.vert.glsl",
+      "binding": "shaderSource45",
+      "component": "content/companies",
+      "line": 45653,
+      "type": "vert",
+      "sha256": "f17bce369a5a90d1926535016f4d35e4482975a01846a0f482641e3405b3ebc7",
+      "uniforms": []
+    },
+    {
+      "name": "companies-eC-46.frag.glsl",
+      "binding": "shaderSource46",
+      "component": "content/companies",
+      "line": 45660,
+      "type": "frag",
+      "sha256": "dc6d2d7885374d384139f6b9b1f2d5b162f2387dbfa2da7286509bf5b6314064",
+      "uniforms": []
+    },
+    {
+      "name": "MapMaterials-tC-47.frag.glsl",
+      "binding": "shaderSource47",
+      "component": "rendering/MapMaterials",
+      "line": 45673,
+      "type": "frag",
+      "sha256": "d325bfbdd9c9dcc8feceb8d26f3449e72ed2d460048c836f301d3d951258e8e6",
+      "uniforms": []
+    },
+    {
+      "name": "WaitlistOverlay-vertexShader-48.vert.glsl",
+      "binding": "shaderSource48",
+      "component": "components/WaitlistOverlay",
+      "line": 48650,
+      "type": "vert",
+      "sha256": "cbbf0d4f87f428f545679b3f1650c4ba384aba21f6b84630e3ffa06b9fb1f449",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "float",
+          "name": "uSpread"
+        },
+        {
+          "type": "float",
+          "name": "uSize"
+        }
+      ]
+    },
+    {
+      "name": "WaitlistOverlay-fragmentShader-49.frag.glsl",
+      "binding": "shaderSource49",
+      "component": "components/WaitlistOverlay",
+      "line": 48671,
+      "type": "frag",
+      "sha256": "b6382cdf105dd85cf9148b3b16d009431fb33daf7780568badb53d27e3f8f012",
+      "uniforms": [
+        {
+          "type": "vec3",
+          "name": "uColor"
+        }
+      ]
+    },
+    {
+      "name": "MapMarkers-uD-50.vert.glsl",
+      "binding": "shaderSource50",
+      "component": "models/MapMarkers",
+      "line": 51685,
+      "type": "vert",
+      "sha256": "a20fa6761e1b8d7af83577b232a56e1d0693d6fe7fc812a7a5fdf695ce8f022b",
+      "uniforms": []
+    },
+    {
+      "name": "MapMarkers-dD-51.frag.glsl",
+      "binding": "shaderSource51",
+      "component": "models/MapMarkers",
+      "line": 51692,
+      "type": "frag",
+      "sha256": "8009ebe5c71e175394741b5a029f0b781403fd0d5fc5533f4ce2c88c1970fdb3",
+      "uniforms": [
+        {
+          "type": "vec3",
+          "name": "uColor"
+        },
+        {
+          "type": "float",
+          "name": "uOpacity"
+        },
+        {
+          "type": "float",
+          "name": "uOuterR"
+        }
+      ]
+    },
+    {
+      "name": "MapMarkers-mD-52.vert.glsl",
+      "binding": "shaderSource52",
+      "component": "models/MapMarkers",
+      "line": 51710,
+      "type": "vert",
+      "sha256": "cd7ea09b37f8b89e3a3d3126a5e39606a07171a970bc6de73deab6be9fc93624",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "float",
+          "name": "uRiseH"
+        },
+        {
+          "type": "float",
+          "name": "uVh"
+        }
+      ]
+    },
+    {
+      "name": "MapMarkers-hD-53.frag.glsl",
+      "binding": "shaderSource53",
+      "component": "models/MapMarkers",
+      "line": 51730,
+      "type": "frag",
+      "sha256": "363e7029360a9e751305b1800fedc928395b2e7396e6077e00e36a0f34d70eb8",
+      "uniforms": [
+        {
+          "type": "vec3",
+          "name": "uColor"
+        },
+        {
+          "type": "float",
+          "name": "uAlpha"
+        }
+      ]
+    },
+    {
+      "name": "MapMarkers-gD-54.vert.glsl",
+      "binding": "shaderSource54",
+      "component": "models/MapMarkers",
+      "line": 51742,
+      "type": "vert",
+      "sha256": "f17bce369a5a90d1926535016f4d35e4482975a01846a0f482641e3405b3ebc7",
+      "uniforms": []
+    },
+    {
+      "name": "MapMarkers-_D-55.frag.glsl",
+      "binding": "shaderSource55",
+      "component": "models/MapMarkers",
+      "line": 51749,
+      "type": "frag",
+      "sha256": "efa5d374335ef42851e1f1ffec12d9526437f31a20521965ee5f904b93c1e3fa",
+      "uniforms": [
+        {
+          "type": "vec3",
+          "name": "uColor"
+        },
+        {
+          "type": "float",
+          "name": "uBaseAlpha"
+        },
+        {
+          "type": "float",
+          "name": "uCapR"
+        },
+        {
+          "type": "float",
+          "name": "uHeight"
+        },
+        {
+          "type": "float",
+          "name": "uTime"
+        }
+      ]
+    },
+    {
+      "name": "StarOverlay-jO-56.vert.glsl",
+      "binding": "shaderSource56",
+      "component": "components/StarOverlay",
+      "line": 54767,
+      "type": "vert",
+      "sha256": "f17bce369a5a90d1926535016f4d35e4482975a01846a0f482641e3405b3ebc7",
+      "uniforms": []
+    },
+    {
+      "name": "StarOverlay-MO-57.frag.glsl",
+      "binding": "shaderSource57",
+      "component": "components/StarOverlay",
+      "line": 54774,
+      "type": "frag",
+      "sha256": "71dfd49c43031d047feb797f620354c48f3431496f670219b60c3e71dd92bc46",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uColour"
+        },
+        {
+          "type": "float",
+          "name": "uFade"
+        },
+        {
+          "type": "float",
+          "name": "uAspect"
+        },
+        {
+          "type": "float",
+          "name": "uFeather"
+        },
+        {
+          "type": "float",
+          "name": "uVideoZoom"
+        }
+      ]
+    },
+    {
+      "name": "CoinRing-extracted-58.vert.glsl",
+      "binding": "extractedShader58",
+      "component": "models/CoinRing",
+      "line": 41067,
+      "type": "vert",
+      "parameters": [
+        "Hy.toFixed(1)",
+        "Uy.toFixed(1)",
+        "Gy.toFixed(1)",
+        "Jy.toFixed(1)",
+        "Wy.toFixed(3)",
+        "Ky.toFixed(1)",
+        "Jy.toFixed(1)",
+        "Wy.toFixed(3)",
+        "qy.toFixed(1)",
+        "Jy.toFixed(1)",
+        "Wy.toFixed(3)",
+        "zy.toFixed(1)",
+        "By.toFixed(1)",
+        "Vy.toFixed(2)",
+        "zy.toFixed(1)",
+        "Vy.toFixed(2)"
+      ],
+      "sha256": "9687935558c661a4941316a578b21cb4e896073a594e1cc2ce1e7708c59ad78e",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uTime"
+        },
+        {
+          "type": "float",
+          "name": "uSwirlTime"
+        },
+        {
+          "type": "vec3",
+          "name": "uBounds"
+        },
+        {
+          "type": "vec3",
+          "name": "uBoundsCenter"
+        },
+        {
+          "type": "float",
+          "name": "uEntry"
+        }
+      ]
+    },
+    {
+      "name": "HandsModel-extracted-59.chunk.glsl",
+      "binding": "extractedShader59",
+      "component": "models/HandsModel",
+      "line": 40764,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "d63f6e486090071cc1c14a07289c9a47ed8a6699bda6ad2986d790baaa01efcb",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uRippleTime"
+        },
+        {
+          "type": "float",
+          "name": "uRippleIntensity"
+        },
+        {
+          "type": "vec2",
+          "name": "uRippleResolution"
+        },
+        {
+          "type": "float",
+          "name": "uRippleHw"
+        }
+      ]
+    },
+    {
+      "name": "OrigamiCertificate-extracted-60.chunk.glsl",
+      "binding": "extractedShader60",
+      "component": "components/OrigamiCertificate",
+      "line": 48358,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "a1cb0454e11916c2500e0560b1af17cf06ff211e776292de8a8abfa03378ef23",
+      "uniforms": []
+    },
+    {
+      "name": "GateThreeToFour-extracted-61.chunk.glsl",
+      "binding": "extractedShader61",
+      "component": "stages/GateThreeToFour",
+      "line": 44600,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "2f146e9b8d557e40f9db763cf9c0106bdb27b489e0f4f45288aa4c66c0cbc4bd",
+      "uniforms": []
+    },
+    {
+      "name": "GateThreeToFour-extracted-62.chunk.glsl",
+      "binding": "extractedShader62",
+      "component": "stages/GateThreeToFour",
+      "line": 44610,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "0a327a7f0ae496f7e33c47cd34164fe0a09f9f16867d3d9e82ea70a963295d27",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uPulseTime"
+        },
+        {
+          "type": "float",
+          "name": "uPulseFreq"
+        },
+        {
+          "type": "float",
+          "name": "uPulseWidth"
+        },
+        {
+          "type": "float",
+          "name": "uPulseGain"
+        },
+        {
+          "type": "float",
+          "name": "uPlaneGlowZ"
+        },
+        {
+          "type": "float",
+          "name": "uPlaneGlowStrength"
+        },
+        {
+          "type": "float",
+          "name": "uPlaneGlowWidth"
+        },
+        {
+          "type": "vec3",
+          "name": "uPlaneGlowColor"
+        },
+        {
+          "type": "float",
+          "name": "uBandFreq"
+        },
+        {
+          "type": "float",
+          "name": "uBandWidth"
+        },
+        {
+          "type": "float",
+          "name": "uBandStrength"
+        },
+        {
+          "type": "float",
+          "name": "uBandPhase"
+        },
+        {
+          "type": "float",
+          "name": "uBandTransparent"
+        },
+        {
+          "type": "float",
+          "name": "uBandOrigin"
+        }
+      ]
+    },
+    {
+      "name": "GateThreeToFour-extracted-63.chunk.glsl",
+      "binding": "extractedShader63",
+      "component": "stages/GateThreeToFour",
+      "line": 44629,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "2b379edb26e3b95eaf47eaf1cf27ca17d547e818b8d6107756836aaa84dd4879",
+      "uniforms": []
+    },
+    {
+      "name": "GateThreeToFour-extracted-64.chunk.glsl",
+      "binding": "extractedShader64",
+      "component": "stages/GateThreeToFour",
+      "line": 44745,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "38cfdfc439fc8ad74be2275a015b8b94e6ecfb946e2a94eb0c67d73f9a207120",
+      "uniforms": []
+    },
+    {
+      "name": "GateThreeToFour-extracted-65.chunk.glsl",
+      "binding": "extractedShader65",
+      "component": "stages/GateThreeToFour",
+      "line": 44755,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "a61e54c8e3965a6577d44c2014d7a97cd77a399ac0149dc337734efebcf71dd4",
+      "uniforms": [
+        {
+          "type": "float",
+          "name": "uFadeZMin"
+        },
+        {
+          "type": "float",
+          "name": "uFadeZEnd"
+        }
+      ]
+    },
+    {
+      "name": "MapStages-extracted-66.chunk.glsl",
+      "binding": "extractedShader66",
+      "component": "stages/MapStages",
+      "line": 52873,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "dcc4701b0641686abcfde9136ca4e8a2acea2bdbb0d9b008ba59e433ae1bf1dc",
+      "uniforms": [
+        {
+          "type": "sampler2D",
+          "name": "uShadowMap"
+        },
+        {
+          "type": "vec2",
+          "name": "uShadowOffset"
+        },
+        {
+          "type": "vec2",
+          "name": "uShadowTiling"
+        },
+        {
+          "type": "vec2",
+          "name": "uShadowAtlasOffset"
+        },
+        {
+          "type": "vec2",
+          "name": "uShadowAtlasScale"
+        },
+        {
+          "type": "float",
+          "name": "uShadowStrength"
+        }
+      ]
+    },
+    {
+      "name": "GateThreeToFour-extracted-67.chunk.glsl",
+      "binding": "extractedShader67",
+      "component": "stages/GateThreeToFour",
+      "line": 44605,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "6308b3c4ff8f06322e2e667246f1765ea5a5375be5a6b11b72e2c38254da6921",
+      "uniforms": []
+    },
+    {
+      "name": "GateThreeToFour-extracted-68.chunk.glsl",
+      "binding": "extractedShader68",
+      "component": "stages/GateThreeToFour",
+      "line": 44750,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "ba3f99570e3223ce1bf6739da2d915ce8c107ac1e8eda03f7ef2bbbf796fd8ae",
+      "uniforms": []
+    },
+    {
+      "name": "MapStages-extracted-69.chunk.glsl",
+      "binding": "extractedShader69",
+      "component": "stages/MapStages",
+      "line": 52885,
+      "type": "chunk",
+      "parameters": [],
+      "sha256": "5857dd444e0b139ba5b984814b614a7c62213e99fbf1bf2695e76a364c00c9b6",
+      "uniforms": []
+    }
+  ]
+}

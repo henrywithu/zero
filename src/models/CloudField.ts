@@ -1,6 +1,5 @@
 import { gS } from "../config/atlases.ts";
 // Recovered behavior with explicit dynamic boundaries; see research/REVERSE_ENGINEERING.md.
-import "../stages/GateThreeToFour.ts";
 import shaderSource43 from "../shaders/CloudField-zS-43.vert.glsl?raw";
 import shaderSource44 from "../shaders/CloudField-BS-44.frag.glsl?raw";
 import {

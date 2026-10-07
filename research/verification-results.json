@@ -1,0 +1,367 @@
+{
+  "referenceBuild": "bdac4e2",
+  "snapshotDate": "2026-10-07",
+  "environment": "Chromium / SwiftShader / Linux",
+  "controls": {
+    "desktop": {
+      "checks": [
+        "audio toggle",
+        "menu opening and toggle dismissal",
+        "live GLSL update preserves experience and material instance",
+        "GLSL restoration",
+        "parameterized GLSL live update",
+        "early hold release stays in stage 1",
+        "completed hold advances to stage 2",
+        "built-in material shader injection HMR",
+        "joystick pans map",
+        "zoom control",
+        "four company cards, texts, videos and tools",
+        "invalid email does not open profile",
+        "email and profile submission persists locally",
+        "referral link copy",
+        "share preview and Escape dismissal",
+        "no horizontal page overflow",
+        "no browser errors or failed asset requests"
+      ],
+      "errors": [],
+      "failures": []
+    },
+    "mobile": {
+      "checks": [
+        "reference mobile HUD variant",
+        "menu opening and toggle dismissal",
+        "early hold release stays in stage 1",
+        "completed hold advances to stage 2",
+        "native touch drag pans map",
+        "native pinch zooms map",
+        "four company cards, texts, videos and tools",
+        "invalid email does not open profile",
+        "email and profile submission persists locally",
+        "referral link copy",
+        "share preview and Escape dismissal",
+        "no horizontal page overflow",
+        "no browser errors or failed asset requests"
+      ],
+      "errors": [],
+      "failures": []
+    }
+  },
+  "production": {
+    "checks": [
+      "production loader ready at normal DPR 1; no development API",
+      "native touch-drawn zero enters the production experience",
+      "native swipe handled after entrance",
+      "responsive canvas and no overflow at 844x390",
+      "responsive canvas and no overflow at 1024x768",
+      "no production browser errors or failed requests"
+    ],
+    "errors": [],
+    "failed": []
+  },
+  "comparisons": {
+    "desktop": {
+      "samples": 13,
+      "DPR": 0.5,
+      "maximumCameraAbsoluteDifference": 0,
+      "localErrors": [],
+      "referenceErrors": [
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of undefined (reading 'isReady')",
+        "Cannot read properties of undefined (reading 'isReady')"
+      ],
+      "unfrozenUniformDifferences": [
+        {
+          "stage": "stage1",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uProgress",
+          "reference": 0.011697,
+          "local": 0.069496
+        },
+        {
+          "stage": "stage2",
+          "progress": 0.15,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.6441076653659944
+        },
+        {
+          "stage": "stage2",
+          "progress": 0.5,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.6441076653659944
+        },
+        {
+          "stage": "stage2",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.6441076653659944
+        },
+        {
+          "stage": "stage3",
+          "progress": 0.15,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.9894672552341931
+        },
+        {
+          "stage": "stage3",
+          "progress": 0.5,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.9894672552341931
+        },
+        {
+          "stage": "stage3",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.9894672552341931
+        },
+        {
+          "stage": "stage4",
+          "progress": 0.15,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.6510285227302978
+        },
+        {
+          "stage": "stage4",
+          "progress": 0.5,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.6510285227302978
+        },
+        {
+          "stage": "stage4",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.6510285227302978
+        },
+        {
+          "stage": "stage5",
+          "progress": 0,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.9066474193030781,
+          "local": 0.4637433098522683
+        }
+      ]
+    },
+    "mobile": {
+      "samples": 13,
+      "DPR": 0.5,
+      "maximumCameraAbsoluteDifference": 0,
+      "localErrors": [],
+      "referenceErrors": [
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of null (reading 'redraw')",
+        "Cannot read properties of undefined (reading 'isReady')",
+        "Cannot read properties of undefined (reading 'isReady')"
+      ],
+      "unfrozenUniformDifferences": [
+        {
+          "stage": "stage1",
+          "progress": 0.15,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0,
+          "local": 0.9651121868737862
+        },
+        {
+          "stage": "stage1",
+          "progress": 0.15,
+          "pass": "foreground",
+          "uniform": "uEnableGodRays",
+          "reference": 0,
+          "local": 1
+        },
+        {
+          "stage": "stage1",
+          "progress": 0.5,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0,
+          "local": 0.9651121868737862
+        },
+        {
+          "stage": "stage1",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uProgress",
+          "reference": 0,
+          "local": 0.026157
+        },
+        {
+          "stage": "stage1",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0,
+          "local": 0.9651121868737862
+        },
+        {
+          "stage": "stage2",
+          "progress": 0.15,
+          "pass": "foreground",
+          "uniform": "uProgress",
+          "reference": 0,
+          "local": 1
+        },
+        {
+          "stage": "stage2",
+          "progress": 0.15,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.42912785807071246
+        },
+        {
+          "stage": "stage2",
+          "progress": 0.5,
+          "pass": "foreground",
+          "uniform": "uProgress",
+          "reference": 0,
+          "local": 1
+        },
+        {
+          "stage": "stage2",
+          "progress": 0.5,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.42912785807071246
+        },
+        {
+          "stage": "stage2",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uProgress",
+          "reference": 0,
+          "local": 1
+        },
+        {
+          "stage": "stage2",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.42912785807071246
+        },
+        {
+          "stage": "stage3",
+          "progress": 0.15,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.11774694578563942
+        },
+        {
+          "stage": "stage3",
+          "progress": 0.5,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.11774694578563942
+        },
+        {
+          "stage": "stage3",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.11774694578563942
+        },
+        {
+          "stage": "stage4",
+          "progress": 0.15,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.9457488739694686
+        },
+        {
+          "stage": "stage4",
+          "progress": 0.5,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.9457488739694686
+        },
+        {
+          "stage": "stage4",
+          "progress": 0.85,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.9457488739694686
+        },
+        {
+          "stage": "stage5",
+          "progress": 0,
+          "pass": "foreground",
+          "uniform": "uGodRaysBlend",
+          "reference": 0.8024520537213846,
+          "local": 0.9457488739694686
+        }
+      ]
+    }
+  },
+  "debug": {
+    "checks": [
+      "original debug defaults",
+      "GUI toggles auto-scroll",
+      "wheel starts a forward text-anchor step"
+    ],
+    "errors": []
+  }
+}

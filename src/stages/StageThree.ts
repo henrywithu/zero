@@ -20,6 +20,7 @@ import {
   Euler,
 } from "three";
 import { awardXp, loadBitmapTexture, vv, rangeProgress } from "./shared.ts";
+import { precompileScene } from "../rendering/precompileScene";
 import { qualityManager } from "../rendering/QualityManager.ts";
 import { createBurnMaterial } from "../rendering/BurnMaterial.ts";
 import { iS, nS, rS, uS, tS, aS, lS } from "./GateThreeToFour.ts";
@@ -127,6 +128,7 @@ var stageThree: any = {
   autoScroll: !1,
   deferPreviousTeardown: !0,
   async enter(this: any, e?: any): Promise<any> {
+    e._stageThreeActivation = Symbol("stageThree");
     if (
       (e.assetLoader.loadStageAssets(`stage4`),
       awardXp(e, `stage3`),
@@ -386,10 +388,11 @@ var stageThree: any = {
       !e._stage3DeferredStarted &&
       ((e._stage3DeferredStarted = !0),
       (async (): Promise<any> => {
+        const activation = e._stageThreeActivation;
         let t: any = e.renderer,
           n: any =
             t && t.compileAsync
-              ? (): any => t.compileAsync(e.scene, e.camera)
+              ? (): any => precompileScene(t, e.scene, e.camera)
               : t && t.compile
                 ? (): any => {
                     t.compile(e.scene, e.camera);
@@ -397,10 +400,14 @@ var stageThree: any = {
                 : (): any => {};
         eS(e);
         await n();
+        if (activation !== e._stageThreeActivation) return;
         await vv();
+        if (activation !== e._stageThreeActivation) return;
         nS(e);
         await n();
+        if (activation !== e._stageThreeActivation) return;
         await vv();
+        if (activation !== e._stageThreeActivation) return;
         rS(e);
         uS(e);
         await n();
@@ -674,6 +681,7 @@ HOLD`,
     },
   },
   teardown(this: any, e?: any): any {
+    e._stageThreeActivation = null;
     let t: any = e.components;
     if (
       (e.lensBlurPass &&

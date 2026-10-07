@@ -11,8 +11,6 @@ import shaderSource37 from "../shaders/TunnelMaterials-Ax-37.vert.glsl?raw";
 import shaderSource38 from "../shaders/TunnelMaterials-jx-38.frag.glsl?raw";
 import shaderSource39 from "../shaders/TunnelMaterials-Nx-39.vert.glsl?raw";
 import shaderSource40 from "../shaders/TunnelMaterials-Px-40.frag.glsl?raw";
-import "../stages/StageThree.ts";
-import "../stages/GateThreeToFour.ts";
 function Cx(
   this: any,
   e: any = 1.4,

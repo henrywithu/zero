@@ -1,8 +1,9 @@
 import { chromium } from "playwright-core";
 import fs from "node:fs/promises";
+await fs.mkdir("research/captures", { recursive: true });
 const reference = process.argv.includes("--reference");
 const browser = await chromium.launch({
-  executablePath: "/usr/bin/chromium",
+  executablePath: process.env.CHROMIUM_PATH || "/usr/bin/chromium",
   headless: true,
   env: { ...process.env, HOME: "/tmp/zero-browser-home" },
   args: [
