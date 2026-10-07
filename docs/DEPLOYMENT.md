@@ -46,4 +46,10 @@ The origami keepsake flow saves its profile **only in the current browser's loca
 
 ## After publishing
 
-Open the production URL on desktop and mobile. Draw a zero, scroll/swipe through the scenes, hold to advance, toggle sound, pan/pinch the final map, and open the journal cards. Check the shared keepsake and the OG image at `/assets/brand/og_image.jpg`. Ensure `/robots.txt`, `/sitemap.xml`, `/site.webmanifest`, and `/favicon.ico` return successfully and a missing `.glb` returns 404.
+Open the production URL on desktop and mobile. Draw a zero, scroll/swipe through the scenes, hold to advance, toggle sound, pan/pinch the final map, and open the journal cards. Check the shared keepsake and the OG image at `/assets/brand/og-trapnest-zero-88f07bf3.jpg`. Ensure `/robots.txt`, `/sitemap.xml`, `/site.webmanifest`, and `/favicon.ico` return successfully and a missing `.glb` returns 404.
+
+## Refreshing social previews
+
+Social metadata is available in the initial HTML response; crawlers do not need to run JavaScript or load the 3D experience. The OG/Twitter/image-source URLs reference a versioned 1200 × 630 JPEG. When replacing the artwork, give it a new content-versioned filename and update all image references together to avoid stale image caches.
+
+iMessage can retain a failed preview for a previously shared URL. After the updated deployment is live, try a fresh link such as `https://zero.henrywithu.com/?preview=2` in a new message. The canonical URL stays unchanged. If a fresh link still fails on a real device while anonymous image requests succeed, check Cloudflare Security events for blocked Apple fetches; user-agent probes alone cannot establish whether Apple's actual network is allowed. Do not disable site-wide security to troubleshoot previews.

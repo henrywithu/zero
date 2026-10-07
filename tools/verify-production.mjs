@@ -42,7 +42,7 @@ try {
   );
   assert.equal(
     await page.locator('meta[property="og:image"]').getAttribute("content"),
-    "https://zero.henrywithu.com/assets/brand/og_image.jpg",
+    "https://zero.henrywithu.com/assets/brand/og-trapnest-zero-88f07bf3.jpg",
   );
   check("production title, canonical URL, and OG metadata");
   await page.locator(".loader-circle-hint.is-visible").waitFor();

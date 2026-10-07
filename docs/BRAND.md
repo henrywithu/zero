@@ -4,7 +4,7 @@ An immersive world within **Trapnest**, Henry's journal of Life & Art & Science 
 
 The visual identity uses a folded elliptical loop in pearl paper and mint glass. The social artwork and transparent symbol were created with image generation. Navigation lockups, favicon variants, and an Apple touch icon use that symbol. Evergreen typography and generous space connect the assets to the existing mint, paper, and glass scenes.
 
-- `public/assets/brand/og_image.jpg`: 1200 × 630 social artwork.
+- `public/assets/brand/og-trapnest-zero-88f07bf3.jpg`: 1200 × 630 social artwork with a content-versioned URL for social preview caches. `og_image.jpg` remains available for existing links.
 - `public/assets/brand/logo.png`: transparent 512 × 512 symbol.
 - `public/assets/brand/nav_logo.svg`, `nav_logo_white.svg`: self-contained navigation lockups.
 - `public/assets/brand/favicon.svg`, `favicon.png`, `public/favicon.ico`: favicon formats.
