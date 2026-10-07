@@ -78,7 +78,7 @@
   {
     "file": "src/rendering/BackgroundPass.ts",
     "sourceLines": [
-      37627,
+      37452,
       37671
     ],
     "dependencies": []
@@ -500,7 +500,7 @@
     "file": "src/components/WaitlistOverlay.ts",
     "sourceLines": [
       48461,
-      49133
+      49202
     ],
     "dependencies": [
       "components/OrigamiPreview",
@@ -510,10 +510,11 @@
   {
     "file": "src/components/Sharing.ts",
     "sourceLines": [
-      49204,
+      49203,
       49715
     ],
     "dependencies": [
+      "components/WaitlistOverlay",
       "components/Referral",
       "components/ShareCard",
       "audio/AudioManager"
@@ -526,6 +527,7 @@
       49828
     ],
     "dependencies": [
+      "components/WaitlistOverlay",
       "components/SharePreview"
     ]
   },
