@@ -1,0 +1,18 @@
+{
+  "name": "Trapnest Zero",
+  "short_name": "Zero",
+  "description": "Life, Art, Science & Technology \u2014 a world by Henry.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#1c4839",
+  "theme_color": "#1c4839",
+  "icons": [
+    {
+      "src": "/assets/brand/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
