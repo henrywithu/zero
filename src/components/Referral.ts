@@ -280,7 +280,7 @@ function vE(
   return `
     <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:${n ? `14px` : `22px`};">
       <p data-stagger style="margin:0;font-family:${i};font-size:${n ? `16px` : `22px`};font-weight:400;color:#1f1d1e;">${s}</p>
-      <p data-stagger style="margin:0;font-family:'Bethany Elingston', 'Dancing Script', cursive;font-size:${n ? `34px` : `56px`};font-weight:400;line-height:1.02;color:#000;white-space:nowrap;"><span data-ahead-count style="font-variant-numeric:tabular-nums;" style="display:none">${a}</span>Paper. Light. Possibility.</p>
+      <p data-stagger style="margin:0;font-family:'Bethany Elingston', 'Dancing Script', cursive;font-size:${n ? `30px` : `48px`};font-weight:400;line-height:1.08;color:#000;"><span data-ahead-count style="display:none" aria-hidden="true">${a}</span>Paper. Light.<br />Possibility.</p>
       <p data-stagger style="margin:0;font-family:${i};font-size:${n ? `16px` : `22px`};font-weight:400;color:#1f1d1e;">Your origami keepsake lives in this browser.</p>
     </div>
 

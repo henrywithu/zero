@@ -35,6 +35,16 @@ const check = (label) => {
 };
 try {
   await page.goto("http://localhost:4173/", { waitUntil: "domcontentloaded" });
+  assert.equal(await page.title(), "Trapnest Zero — A Space for Wonder");
+  assert.equal(
+    await page.locator('link[rel="canonical"]').getAttribute("href"),
+    "https://zero.henrywithu.com/",
+  );
+  assert.equal(
+    await page.locator('meta[property="og:image"]').getAttribute("content"),
+    "https://zero.henrywithu.com/assets/brand/og_image.jpg",
+  );
+  check("production title, canonical URL, and OG metadata");
   await page.locator(".loader-circle-hint.is-visible").waitFor();
   assert.equal(await page.evaluate(() => typeof window.__zero), "undefined");
   check("production loader ready at normal DPR 1; no development API");

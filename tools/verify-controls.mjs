@@ -301,15 +301,25 @@ try {
       .getAttribute("alt");
     companies.add(company);
     assert(await page.locator("[data-scenario]").innerText());
-    assert(await page.locator("[data-project-image]").evaluate(img => img.complete && img.naturalWidth > 0));
-    assert((await page.locator("[data-join]").getAttribute("href")).startsWith("https://henrywithu.com/"));
+    assert(
+      await page
+        .locator("[data-project-image]")
+        .evaluate((img) => img.complete && img.naturalWidth > 0),
+    );
+    assert(
+      (await page.locator("[data-join]").getAttribute("href")).startsWith(
+        "https://henrywithu.com/",
+      ),
+    );
   }
   assert.equal(companies.size, 4);
   check("four Trapnest project cards, featured images, and journal links");
-  await page.screenshot({ path: `research/captures/${name}-trapnest-project.png` });
+  await page.screenshot({
+    path: `research/captures/${name}-trapnest-project.png`,
+  });
   // Project CTAs are source links; the independent keepsake pill retains its reveal.
   await page.evaluate(async () => {
-    const { OD } = await import('/src/components/CompanyPopupBehavior.ts');
+    const { OD } = await import("/src/components/CompanyPopupBehavior.ts");
     OD(window.__zero.context._mapPanel);
   });
   await page.locator(".eg-label").click();
@@ -328,29 +338,38 @@ try {
         .getAttribute("class")),
   );
   await page.locator('.jf-form [name="name"]').fill("Zero Test");
-  await page.locator('.jf-form [name="age"]').fill("24");
-  await page.locator('.jf-form [name="city"]').fill("London");
-  await page.locator('[data-field="education"] .jf-select-trigger').click();
-  await page.locator('.jf-select-option[data-value="university"]').click();
-  await page.locator('.jf-form [name="university"]').fill("Test University");
-  await page
-    .locator('.jf-form [name="notes"]')
-    .fill("Local verification of the recovered form.");
+  if (!mobile) {
+    await page.locator('.jf-form [name="age"]').fill("24");
+    await page.locator('.jf-form [name="city"]').fill("London");
+    await page.locator('[data-field="education"] .jf-select-trigger').click();
+    await page.locator('.jf-select-option[data-value="university"]').click();
+    await page.locator('.jf-form [name="university"]').fill("Test University");
+    await page
+      .locator('.jf-form [name="notes"]')
+      .fill("Local verification of the recovered form.");
+  }
   await page.locator(".jf-submit-btn").click();
   await page.waitForFunction(() =>
-    JSON.parse(localStorage.getItem("trapnest-zero:local-keepsakes") || "[]").some(
-      (m) => m.profile_complete,
-    ),
+    JSON.parse(
+      localStorage.getItem("trapnest-zero:local-keepsakes") || "[]",
+    ).some((m) => m.profile_complete),
   );
   const member = await page.evaluate(
     () => JSON.parse(localStorage.getItem("trapnest-zero:local-keepsakes"))[0],
   );
   assert.equal(member.name, "Zero Test");
-  assert.equal(member.location, "London");
-  assert.equal(member.university, "Test University");
+  if (!mobile) {
+    assert.equal(member.location, "London");
+    assert.equal(member.university, "Test University");
+  } else {
+    assert.equal(member.location ?? "", "");
+    assert.equal(member.university ?? "", "");
+    check("name-only keepsake saves without optional demographic fields");
+  }
   check("email and profile submission persists locally");
   await page.waitForTimeout(4000);
   await page.context().grantPermissions(["clipboard-read", "clipboard-write"]);
+  assert.equal(await page.locator("[data-ahead-count]").isVisible(), false);
   await page.locator('[data-share="copy"]').click();
   assert(
     (await page.evaluate(() => navigator.clipboard.readText())).includes(
@@ -360,6 +379,9 @@ try {
   check("Trapnest Zero share link copy");
   await page.locator('[data-share="share"]').click();
   await page.locator(".sp-backdrop").waitFor({ state: "visible" });
+  await page.screenshot({
+    path: `research/captures/${name}-trapnest-share.png`,
+  });
   await page.keyboard.press("Escape");
   await page.locator(".sp-backdrop").waitFor({ state: "detached" });
   check("share preview and Escape dismissal");

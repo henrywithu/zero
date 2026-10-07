@@ -1,29 +1,32 @@
-# Zero
+# Trapnest Zero
 
-A source-based reconstruction of [why.zero.university](https://why.zero.university/), using extracted original assets and recovered scene algorithms. It runs as 79 modular TypeScript components/services, with 69 isolated original GLSL programs/chunks and Vite HMR. The archived production bundle is research-only and is never loaded by the application.
+**A space for wonder.** An immersive journey through paper, glass, and possibility, within [Trapnest](https://henrywithu.com/): Life & Art & Science & Technology.
 
-Use Node 22.12+ or 24:
+Production URL: **https://zero.henrywithu.com/**. [Trapnest Theory](https://theory.henrywithu.com/) is a sibling project featured in Zero's final map.
+
+Use Node 24:
 
 ```sh
 npm ci
 npm run dev
-```
-
-Draw a zero to enter, then scroll or swipe through the five stages. Hold the glowing control when prompted. On the final map, use desktop joystick/zoom controls or mobile drag/pinch and tap company markers.
-
-```sh
 npm run build
 npm run preview
-npm run verify:source
 ```
 
-GLSL edits update live materials while preserving the active scene, including parameterized shaders and Three.js material injections. CSS uses native Vite HMR. TypeScript changes use Vite's update/reload flow.
+Draw a zero to enter, then scroll or swipe through five scenes. Hold the glowing control when prompted. On the final map, use desktop controls or mobile drag/pinch and explore the Trapnest journal cards. Sound, 3D geometry, motion, transitions, and interaction physics preserve the original experience.
 
-The signup/profile/referral flow is functional with **local browser storage**; it does not submit to the original production waitlist. No analytics, cookie consent, or deployment is included.
+The origami keepsake flow stores its optional profile **only in this browser**. It does not create a subscription or send emails. Visit the main Trapnest journal to subscribe.
 
-- [Detailed reverse-engineering report](research/REVERSE_ENGINEERING.md): assets, loading, animation/timeline, UI, input, shaders, audio, responsiveness and architecture.
-- [Validation record](research/VALIDATION.md): comparisons, passed desktop/mobile/production checks, source bugs fixed and measurement limits.
-- [Source manifests](research/asset-manifest.json) and [shader manifest](research/shader-manifest.json): extraction URLs/hashes and original code locations.
-- [Current architecture](research/architecture.json) and [behavior inventory](research/behavior-inventory.json): module graph, stage/text/audio settings and shader uniforms.
+```sh
+npm run verify:source
+npm run verify:controls                 # requires Vite on localhost:5173 + Chromium
+npm run verify:controls -- --mobile
+npm run deploy:check                    # build + Workers dry run; no publication
+npm run deploy                         # build + deploy once Cloudflare is authenticated
+```
 
-Normal development edits `src/`. Recovery/migration scripts under `tools/` document the extraction process; do not rerun them as build steps because they can overwrite maintained source. Browser validation commands and Chromium configuration are documented in the validation record.
+See [Cloudflare deployment instructions](docs/DEPLOYMENT.md) for Git integration, domain setup, and local deployment. See [brand and content notes](docs/BRAND.md) for generated assets and journal sources, and [the rebrand validation record](docs/VALIDATION.md) for preservation and deployment checks.
+
+Architecture: modular TypeScript components/services in `src/`, 69 isolated GLSL programs/chunks, and self-hosted resources in `public/`. GLSL updates use live material HMR; TypeScript and CSS use Vite. The [reverse-engineering report](research/REVERSE_ENGINEERING.md) and [original validation record](research/VALIDATION.md) preserve source provenance. Archived code under `research/original/` is never loaded by the app.
+
+The source check validates every original scene/audio/font asset and shader; seven intentional brand replacements are explicitly listed. Recovery/migration tools document the extraction process; do not rerun them as build steps because they can overwrite maintained source. To regenerate only the editorial text atlas and keepsake paper, run `npm run brand:typeset` with the dev server active.

@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "trapnest-zero",
+  "compatibility_date": "2026-10-07",
+  "workers_dev": false,
+  "preview_urls": true,
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none",
+    "binding": "ASSETS",
+    "run_worker_first": ["/assets/videos/*", "/assets/audio/*"],
+  },
+  "routes": [
+    {
+      "pattern": "zero.henrywithu.com",
+      "custom_domain": true,
+    },
+  ],
+  "main": "worker/index.ts",
+}

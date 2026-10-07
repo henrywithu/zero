@@ -8,20 +8,27 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "verify:source": "node tools/verify-provenance.mjs",
-    "verify:controls": "node tools/verify-controls.mjs"
+    "verify:controls": "node tools/verify-controls.mjs",
+    "brand:typeset": "node tools/build-brand-content.mjs",
+    "verify:production": "node tools/verify-production.mjs",
+    "dev:worker": "npm run build && wrangler dev --port 8787",
+    "deploy:check": "npm run build && wrangler deploy --dry-run",
+    "deploy": "npm run build && wrangler deploy",
+    "verify:worker": "node tools/verify-worker.mjs"
   },
   "devDependencies": {
     "@babel/generator": "^7.28.0",
     "@babel/parser": "^7.28.0",
     "@babel/traverse": "^7.28.0",
+    "@types/howler": "^2.2.12",
     "@types/node": "^24.0.0",
+    "@types/stats.js": "^0.17.4",
+    "@types/three": "^0.160.0",
     "playwright-core": "^1.55.0",
     "prettier": "^3.6.2",
     "typescript": "^5.9.3",
     "vite": "^7.1.0",
-    "@types/howler": "^2.2.12",
-    "@types/stats.js": "^0.17.4",
-    "@types/three": "^0.160.0"
+    "wrangler": "^4.148.0"
   },
   "dependencies": {
     "gsap": "3.15.0",
@@ -31,5 +38,8 @@
     "mp4-muxer": "5.2.2",
     "stats.js": "0.17.0",
     "three": "0.160.1"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

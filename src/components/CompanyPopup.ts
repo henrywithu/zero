@@ -80,11 +80,7 @@ function createCompanyPopup(this: any, { onJoin: e }: any = {}): any {
   `;
   t.innerHTML = `
     <div class="mp-hero" style="position:relative;height:210px;border-radius:26px;overflow:hidden;flex-shrink:0;box-sizing:border-box;padding:10px;display:flex;align-items:flex-start;justify-content:flex-start;background:linear-gradient(155deg,#efeae6 0%,#ddd6cf 100%)">
-      <!-- Per-company hero video (assets/videos/<file>). src is set per open in
-           _showMapPanel, which also starts playback (once, no loop), unmutes it,
-           and muffles the Howler beds while it plays. Closing the card stops it.
-           The dummy SVG is the poster so the slot is never blank while the clip
-           buffers; an error hides the video to fall back to the hero gradient. -->
+      <!-- Journal imagery is editorial content; the optional video slot retains its existing playback behavior. -->
       <img data-project-image alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;" />
       <video class="mp-hero-media" data-hero-media playsinline preload="auto" poster="/assets/ui/company_card_dummy.svg" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;"></video>
       <div class="mp-logo" style="position:relative;z-index:1;display:inline-flex;gap:8px;align-items:center;justify-content:center;height:38px;padding:0 7px;border-radius:40px;background:#ffffff;box-shadow:0 1px 6px rgba(0,0,0,0.12);box-sizing:border-box">
@@ -99,7 +95,7 @@ function createCompanyPopup(this: any, { onJoin: e }: any = {}): any {
     <div class="mp-tools" style="display:flex;align-items:center;justify-content:center;padding:6px 12px">
       <div data-tools style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;align-content:center;gap:6px;max-width:100%"></div>
     </div>
-    <a class="mp-join" data-join target="_blank" rel="noopener noreferrer" style="align-self:stretch;text-decoration:none;border:none;cursor:pointer;border-radius:1326px;background:linear-gradient(180deg,#323232,#222);color:#fcfcfc;font-family:${n};font-size:20px;font-weight:500;letter-spacing:-0.02em;padding:15px 30px;box-shadow:0px 0.98px 1.96px rgba(255,255,255,0.15) inset, 0px 3.92px 7.84px -1.96px rgba(13,13,13,0.5), 0px -1.96px 2.35px 0.69px #121212 inset">Read the story ↗</a>
+    <a class="mp-join" data-join target="_blank" rel="noopener noreferrer" style="align-self:stretch;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;border:none;cursor:pointer;border-radius:1326px;background:linear-gradient(180deg,#323232,#222);color:#fcfcfc;font-family:${n};font-size:20px;font-weight:500;letter-spacing:-0.02em;padding:15px 30px;box-shadow:0px 0.98px 1.96px rgba(255,255,255,0.15) inset, 0px 3.92px 7.84px -1.96px rgba(13,13,13,0.5), 0px -1.96px 2.35px 0.69px #121212 inset">Read the story <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   `;
   t.addEventListener(`pointerdown`, (e?: any): any => e.stopPropagation());
   t.addEventListener(`pointerup`, (e?: any): any => e.stopPropagation());
