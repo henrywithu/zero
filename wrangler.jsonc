@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "trapnest-zero",
+  "name": "zero",
   "compatibility_date": "2026-10-07",
   "workers_dev": false,
   "preview_urls": true,

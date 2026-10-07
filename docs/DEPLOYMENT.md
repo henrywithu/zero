@@ -9,12 +9,12 @@ Connect `henrywithu/zero` to **Workers & Pages → Create → Import a repositor
 | Setting | Value |
 | --- | --- |
 | Root directory | `/` (repository root) |
-| Worker name | `trapnest-zero` |
+| Worker name | `zero` |
 | Build command | `npm run build` |
 | Deploy command | `npx wrangler deploy` |
 | Node version | `24` |
 
-The checked-in Wrangler configuration serves `dist/` and binds `zero.henrywithu.com` as a Custom Domain. The `henrywithu.com` zone must be active in the same Cloudflare account. Workers can then provision the domain's DNS record and TLS certificate. If `zero.henrywithu.com` already has an existing DNS record or Worker route, resolve that conflict in Cloudflare before deployment. Do not create a CNAME to the main site.
+The checked-in Wrangler configuration targets the existing Worker named `zero`, serves `dist/`, and binds `zero.henrywithu.com` as a Custom Domain. The Worker name is an infrastructure identifier; the site brand remains Trapnest Zero. Keep this name aligned with the connected Cloudflare Worker: Workers Builds validates the target and rejects deployments to a different Worker. The `henrywithu.com` zone must be active in the same Cloudflare account. Workers can then provision the domain's DNS record and TLS certificate. If `zero.henrywithu.com` already has an existing DNS record or Worker route, resolve that conflict in Cloudflare before deployment. Do not create a CNAME to the main site.
 
 Cloudflare's Git integration supplies deployment credentials. Preview URLs are enabled; the public `workers.dev` route is disabled. Metadata and sharing intentionally retain the production canonical URL in previews.
 
