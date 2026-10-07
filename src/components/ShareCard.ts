@@ -25,7 +25,7 @@ function aE(
     h: any = m / 1080,
     g: any = `#1f1d1e`,
     _: any = 60 * h,
-    v: any = `font-family:'PP Supply Mono', 'Supply Sans', ui-monospace, monospace;font-size:${36 * h}px;letter-spacing:${-1.08 * h}px;color:${g};text-transform:uppercase;white-space:nowrap;line-height:1;`,
+    v: any = `font-family:'PP Supply Mono', 'Supply Sans', ui-monospace, monospace;font-size:${27 * h}px;letter-spacing:${-1.08 * h}px;color:${g};text-transform:uppercase;white-space:nowrap;line-height:1;`,
     y: any = document.createElement(`div`);
   y.className = `sp-poster`;
   y.style.cssText = `
@@ -40,7 +40,7 @@ function aE(
 
     <span class="sp-corner sp-corner-label" data-align="left"
           style="position:absolute; top:${_}px; left:${_}px; z-index:2;
-                 pointer-events:none; ${v}">Founding member</span>
+                 pointer-events:none; ${v}">Wonder begins</span>
     <span class="sp-corner sp-corner-label" data-align="right"
           style="position:absolute; top:${_}px; right:${_}px; z-index:2;
                  pointer-events:none; ${v}">#${r}</span>
@@ -49,7 +49,7 @@ function aE(
       left:0; right:0; top:0; height:${p * 0.6}px;
       display:flex; align-items:center; justify-content:center; z-index:1;"></div>
 
-    <img src="/assets/ui/share-card_congrats.webp" alt="Your degree is finally useful"
+    <img src="/assets/brand/keepsake-note.svg" alt="A little wonder, folded for you"
          draggable="false"
          style="position:absolute; left:${64 * h}px; top:${p * 0.5}px; z-index:2;
                 pointer-events:none; width:${450 * h}px; height:auto;" />
@@ -58,17 +58,17 @@ function aE(
                 display:flex; flex-direction:column; align-items:center; gap:${36 * h}px;
                 text-align:center; color:${g};">
       <div style="font-family:'STK Bureau Serif', 'Newsreader', Georgia, serif; font-weight:400; font-size:${128 * h}px;
-                  letter-spacing:${-6.4 * h}px; line-height:0.95;">${s}</div>
+                  letter-spacing:${-6.4 * h}px; line-height:0.95;">${s.replace(/[&<>"']/g, (char: string) => `&#${char.charCodeAt(0)};`)}</div>
       <div style="font-family:'Google Sans Flex', 'Inter', sans-serif; font-weight:500; font-size:${36 * h}px;
                   line-height:1.3; opacity:0.8; max-width:${760 * h}px;">${KT}</div>
     </div>
 
-    <img class="sp-corner" src="/assets/brand/nav_logo.svg" alt="zero" draggable="false"
+    <img class="sp-corner" src="/assets/brand/nav_logo.svg" alt="Trapnest Zero" draggable="false"
          style="position:absolute; bottom:${_}px; left:${_}px; z-index:2;
-                pointer-events:none; height:${37 * h}px; width:${(104 / 30) * 37 * h}px; display:block;" />
+                pointer-events:none; height:${37 * h}px; width:${3 * 37 * h}px; display:block;" />
     <span class="sp-corner sp-corner-label" data-align="right"
           style="position:absolute; bottom:${_}px; right:${_}px; z-index:2;
-                 pointer-events:none; ${v}">zero.university</span>
+                 pointer-events:none; ${v}">zero.henrywithu.com</span>
   `;
   let b: any = document.createElement(`div`);
   b.className = `sp-poster-tilt`;

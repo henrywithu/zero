@@ -14,7 +14,7 @@ interface LocalMember {
   university?: string;
   about?: string;
 }
-const storageKey = "zero:local-members";
+const storageKey = "trapnest-zero:local-keepsakes";
 function readMembers(): LocalMember[] {
   try {
     return JSON.parse(
@@ -74,7 +74,7 @@ export async function localWaitlistRequest(
       email: data.email,
       waitlist_animal: data.waitlist_animal ?? "angelfish",
       profile_complete: false,
-      referral_url: `${location.origin}/?ref=${uuid.slice(0, 8)}`,
+      referral_url: `https://zero.henrywithu.com/`,
       effective_position: members.length + 1,
       waitlist_number: members.length + 1,
     };

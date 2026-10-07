@@ -11,7 +11,15 @@ const assets = [
   ...JSON.parse(fs.readFileSync("research/asset-manifest.json")),
   ...JSON.parse(fs.readFileSync("research/font-manifest.json")),
 ];
+// Intentional identity replacements; every scene/audio/font asset remains hash-checked.
+const brandOverrides = new Set([
+  'assets/brand/apple-touch-icon.png', 'assets/brand/favicon.png',
+  'assets/brand/favicon.svg', 'assets/brand/nav_logo.svg',
+  'assets/brand/nav_logo_white.svg', 'assets/brand/og_image.jpg',
+  'assets/ui/zero_icon.jpg',
+]);
 for (const item of assets) {
+  if (brandOverrides.has(item.path)) continue;
   if (item.error) throw Error(`${item.path}: ${item.error}`);
   if (digest(fs.readFileSync("public/" + item.path)) !== item.sha256)
     throw Error("Asset changed: " + item.path);
@@ -59,5 +67,5 @@ for (const item of shaders) {
   );
 }
 console.log(
-  `Verified ${assets.length} original assets and ${shaders.length} original shader sources.`,
+  `Verified ${assets.length - brandOverrides.size} unchanged original assets and ${shaders.length} original shader sources.`,
 );

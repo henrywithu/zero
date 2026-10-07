@@ -105,7 +105,7 @@ Aw();
 ((): any => {
   try {
     console.log(
-      `Website designed by Zero University and developed by BUNQ LABS.`,
+      `Trapnest Zero — a world by Henry. Original experience design: Zero University; development: BUNQ LABS.`,
     );
   } catch {}
 })();

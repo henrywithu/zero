@@ -83,10 +83,10 @@ function YT(
   let c: any =
     t ||
     (e
-      ? `https://www.zero.university?ref=${e}`
-      : `https://www.zero.university`);
+      ? `https://zero.henrywithu.com?ref=${e}`
+      : `https://zero.henrywithu.com`);
   c.replace(/^https?:\/\//, ``);
-  let l: any = `this is the first education thing i've seen that actually looks pretty cool. i just joined the beta, wanna do it with me?`,
+  let l: any = `A little wonder, folded for you. Explore Trapnest Zero — paper, glass, and possibility.`,
     u: any = `
         <button class="sp-social-btn sp-share-one" type="button" data-share-action="share" aria-label="Share">${cE()}<span>Share</span></button>
         <button class="sp-social-btn sp-share-one" type="button" data-share-action="download" aria-label="Download video">${lE()}<span>Download</span></button>
@@ -243,7 +243,7 @@ function YT(
               let n: any = URL.createObjectURL(e),
                 r: any = document.createElement(`a`);
               r.href = n;
-              r.download = e.name || `zero-invite.mp4`;
+              r.download = e.name || `trapnest-zero-invite.mp4`;
               document.body.appendChild(r);
               r.click();
               r.remove();
@@ -352,7 +352,7 @@ function nE(this: any, e?: any, t?: any, n?: any, r?: any): any {
   let a: any = i.getContext(`2d`),
     o: any = n / e.offsetWidth,
     s: any = r / e.offsetHeight,
-    c: any = e.querySelector(`img[alt="zero"]`);
+    c: any = e.querySelector(`img[alt="Trapnest Zero"]`);
   t &&
     c &&
     a.drawImage(
@@ -388,7 +388,7 @@ async function rE(this: any, e?: any): Promise<any> {
   let t: any = e?.el;
   if (!t) return null;
   let n: any = t.querySelector(`canvas`),
-    r: any = t.querySelector(`img[alt="zero"]`),
+    r: any = t.querySelector(`img[alt="Trapnest Zero"]`),
     i: any = null,
     a: any = null;
   try {
@@ -419,7 +419,7 @@ async function rE(this: any, e?: any): Promise<any> {
         l.toBlob((t?: any): any => e(t), `image/jpeg`, 0.9),
       );
     return u
-      ? new File([u], `zero-invite.jpg`, {
+      ? new File([u], `trapnest-zero-invite.jpg`, {
           type: `image/jpeg`,
         })
       : null;
@@ -458,7 +458,7 @@ async function iE(this: any, e?: any): Promise<any> {
     } catch {}
   if (!s) return `unsupported`;
   let l: any = t.querySelector(`canvas`),
-    u: any = t.querySelector(`img[alt="zero"]`);
+    u: any = t.querySelector(`img[alt="Trapnest Zero"]`);
   if (!l || !e.renderFoldFraction || !e.snapshotCanvas) return null;
   let d: any = a / t.offsetWidth,
     f: any = o / t.offsetHeight,
@@ -587,7 +587,7 @@ async function iE(this: any, e?: any): Promise<any> {
     let A: any = C.target.buffer;
     return !A || !A.byteLength
       ? null
-      : new File([A], `zero-invite.mp4`, {
+      : new File([A], `trapnest-zero-invite.mp4`, {
           type: `video/mp4`,
         });
   } catch {

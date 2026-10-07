@@ -7,7 +7,7 @@ import {
   ClampToEdgeWrapping,
   MeshStandardMaterial,
 } from "three";
-var aT: any = `/assets/textures/origami_certificate.webp`;
+var aT: any = `/assets/brand/keepsake-paper.png`;
 var oT: any = 8;
 var sT: any = `"Bethany Elingston", serif`;
 var cT: any = `#33302b`;

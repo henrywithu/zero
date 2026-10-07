@@ -301,11 +301,18 @@ try {
       .getAttribute("alt");
     companies.add(company);
     assert(await page.locator("[data-scenario]").innerText());
-    assert(await page.locator("[data-hero-media]").getAttribute("src"));
+    assert(await page.locator("[data-project-image]").evaluate(img => img.complete && img.naturalWidth > 0));
+    assert((await page.locator("[data-join]").getAttribute("href")).startsWith("https://henrywithu.com/"));
   }
   assert.equal(companies.size, 4);
-  check("four company cards, texts, videos and tools");
-  await page.locator(".mp-join").click();
+  check("four Trapnest project cards, featured images, and journal links");
+  await page.screenshot({ path: `research/captures/${name}-trapnest-project.png` });
+  // Project CTAs are source links; the independent keepsake pill retains its reveal.
+  await page.evaluate(async () => {
+    const { OD } = await import('/src/components/CompanyPopupBehavior.ts');
+    OD(window.__zero.context._mapPanel);
+  });
+  await page.locator(".eg-label").click();
   await page.locator(".eg-input").fill("invalid");
   await page.locator(".eg-submit").click();
   assert.equal(await page.locator(".jf-panel").count(), 0);
@@ -331,12 +338,12 @@ try {
     .fill("Local verification of the recovered form.");
   await page.locator(".jf-submit-btn").click();
   await page.waitForFunction(() =>
-    JSON.parse(localStorage.getItem("zero:local-members") || "[]").some(
+    JSON.parse(localStorage.getItem("trapnest-zero:local-keepsakes") || "[]").some(
       (m) => m.profile_complete,
     ),
   );
   const member = await page.evaluate(
-    () => JSON.parse(localStorage.getItem("zero:local-members"))[0],
+    () => JSON.parse(localStorage.getItem("trapnest-zero:local-keepsakes"))[0],
   );
   assert.equal(member.name, "Zero Test");
   assert.equal(member.location, "London");
@@ -347,10 +354,10 @@ try {
   await page.locator('[data-share="copy"]').click();
   assert(
     (await page.evaluate(() => navigator.clipboard.readText())).includes(
-      "/?ref=",
+      "https://zero.henrywithu.com/",
     ),
   );
-  check("referral link copy");
+  check("Trapnest Zero share link copy");
   await page.locator('[data-share="share"]').click();
   await page.locator(".sp-backdrop").waitFor({ state: "visible" });
   await page.keyboard.press("Escape");

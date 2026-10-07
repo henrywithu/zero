@@ -730,11 +730,11 @@ function FT(
 }
 var BT: any = 0.45;
 var VT: any = 0.3;
-var HT: any = `sanjayboi`;
-var UT: any = `Sanjay Chauhan`;
-var WT: any = 1245;
+var HT: any = ``;
+var UT: any = `Explorer`;
+var WT: any = 1;
 var GT: any = 1080 / 1576;
-var KT: any = `is inviting you to be part of the most immersive education experience in the world.`;
+var KT: any = `invites you into Trapnest Zero — a space for Life, Art, Science & Technology.`;
 export {
   bT,
   xT,

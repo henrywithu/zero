@@ -567,9 +567,9 @@ var AssetLoader = class {
           path: `assets/atlases/shards-petals-coins.ktx2`,
         },
         {
-          type: `ktx2`,
+          type: `texture`,
           key: `textsAtlas`,
-          path: `assets/atlases/texts.ktx2`,
+          path: `assets/brand/narrative-atlas.png`,
         },
       ],
       stage2: [

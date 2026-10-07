@@ -13,15 +13,15 @@ var Vw: any = 0.45;
 var Hw: any = [
   {
     value: `university`,
-    label: `I'm in university`,
+    label: `I’m exploring`,
   },
   {
     value: `graduate`,
-    label: `I'm a graduate`,
+    label: `I’m creating`,
   },
   {
     value: `other`,
-    label: `Other`,
+    label: `I’m just curious`,
   },
 ];
 var Uw: any = `university`;
@@ -133,7 +133,7 @@ function Gw(this: any): any {
           font-family: 'Bethany Elingston', 'Dancing Script', cursive;
           font-weight: 400; font-size: 48px; line-height: 1.2;
           color: #000; max-width: 390px;
-        ">Be the first one to be onboard</p>
+        ">Make room for wonder.</p>
         <img
           class="jf-plant"
           src="${Lw}assets/ui/plant.webp"
@@ -156,23 +156,23 @@ function Gw(this: any): any {
           required: !0,
           maxlength: 50,
         })}
-        ${Jw(`age`, `your age`, {
+        ${Jw(`age`, `your age (optional)`, {
           autocomplete: `off`,
-          required: !0,
+          required: !1,
           inputmode: `numeric`,
           maxlength: 3,
         })}
-        ${Jw(`city`, `your city`, {
+        ${Jw(`city`, `your city (optional)`, {
           autocomplete: `address-level2`,
-          required: !0,
+          required: !1,
           maxlength: 60,
         })}
-        ${Yw(`education`, `your education`, Hw, !0)}
-        ${Jw(`university`, `your university name`, {
+        ${Yw(`education`, `your creative practice (optional)`, Hw, !1)}
+        ${Jw(`university`, `your studio, school, or space (optional)`, {
           autocomplete: `organization`,
           maxlength: 80,
         })}
-        ${Xw(`notes`, `Lastly, is there anything we should know about you that will help us as we select people for the beta?`)}
+        ${Xw(`notes`, `What would you like to imagine next? (optional)`)}
 
         <div class="jf-status" style="
           margin: 0;
@@ -198,12 +198,12 @@ function Gw(this: any): any {
         font-family: 'Bethany Elingston', 'Dancing Script', cursive;
         font-weight: 400; font-size: 64px; line-height: 1.2;
         color: #000; max-width: 700px;
-      ">You're on the list.</p>
+      ">Your wonder, folded.</p>
       <p style="
         margin: 0;
         font-family: 'Inter', sans-serif; font-size: 18px;
         line-height: 1.5; color: rgba(0,0,0,0.6); max-width: 480px;
-      ">We'll be in touch soon. Until then, keep dreaming.</p>
+      ">Your keepsake is saved in this browser. Visit Trapnest’s journal for new worlds and stories.</p>
     </div>
   `;
   return e;
@@ -306,7 +306,7 @@ function createJoinForm(
     m: any = d.querySelector(`.jf-status`),
     h: any = d.querySelector(`.jf-content`),
     g: any = d.querySelector(`.jf-success`),
-    _: any = Ww(`Join Beta`);
+    _: any = Ww(`Save keepsake`);
   p.appendChild(_);
   let v: any = p.querySelector(`[data-field="education"]`),
     y: any = v.querySelector(`.jf-select`),
@@ -319,9 +319,7 @@ function createJoinForm(
       .querySelector(`[data-field="university"]`)
       .querySelector(`input`);
   function E(this: any, _animate?: boolean): any {
-    b.value === Uw
-      ? T.setAttribute(`required`, ``)
-      : T.removeAttribute(`required`);
+    T.removeAttribute(`required`);
   }
   if (o)
     for (let e of p.querySelectorAll(`input, select, textarea`)) {
@@ -399,21 +397,21 @@ function createJoinForm(
         pattern: P,
       },
       age: {
-        required: !0,
+        required: !1,
         pattern: /^\d{1,3}$/,
-        validate: (e?: any): any => +e >= 5 && +e <= 120,
+        validate: (e?: any): any => !e || (+e >= 5 && +e <= 120),
       },
       city: {
-        required: !0,
+        required: !1,
         min: 2,
         max: 60,
         pattern: P,
       },
       education: {
-        required: !0,
+        required: !1,
       },
       university: {
-        required: (e?: any): any => (e.education || ``) === Uw,
+        required: !1,
         min: 2,
         max: 80,
         pattern: P,
@@ -603,10 +601,10 @@ function createJoinForm(
         ? (_.classList.remove(`is-loading`),
           _.classList.add(`is-success`),
           (_.disabled = !0),
-          (t.textContent = `Joined`))
+          (t.textContent = `Saved`))
         : (_.classList.remove(`is-loading`, `is-success`),
           (_.disabled = !1),
-          (t.textContent = `Join Beta`));
+          (t.textContent = `Save keepsake`));
   }
   async function ue(this: any): Promise<any> {
     if (R) return;
@@ -623,11 +621,6 @@ function createJoinForm(
         I(t);
       };
     if (!t) return c(`Please enter your name.`, `name`);
-    if (!n) return c(`Please enter your age.`, `age`);
-    if (!r) return c(`Please enter your city.`, `city`);
-    if (!i) return c(`Please select your education.`, `education`);
-    if (i === Uw && !o)
-      return c(`Please enter your university name.`, `university`);
     R = !0;
     m.textContent = ``;
     le(`loading`);

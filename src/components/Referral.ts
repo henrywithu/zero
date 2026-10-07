@@ -9,8 +9,8 @@ var dE: any = 0.85;
 var fE: any = 0.3;
 var pE: any = 1.6;
 var mE: any = 0.48;
-var hE: any = 5296;
-var gE: any = `sanjayboi`;
+var hE: any = 0;
+var gE: any = ``;
 function _E(
   this: any,
   {
@@ -40,8 +40,8 @@ function _E(
     h: any =
       i ||
       (r
-        ? `https://www.zero.university?ref=${r}`
-        : `https://www.zero.university`),
+        ? `https://zero.henrywithu.com?ref=${r}`
+        : `https://zero.henrywithu.com`),
     g: any = h.replace(/^https?:\/\//, ``),
     _: any = document.createElement(`div`);
   _.className = `sh-layout`;
@@ -76,8 +76,8 @@ function _E(
   _.appendChild(y);
   let b: any = document.createElement(`img`);
   b.className = `sh-congrats`;
-  b.src = `/assets/ui/congrats.webp`;
-  b.alt = `Congratulations`;
+  b.src = `/assets/brand/keepsake-note.svg`;
+  b.alt = `A little wonder, folded for you`;
   b.draggable = !1;
   b.style.cssText = `
     position: absolute; top: ${m ? `56px` : `78px`}; left: ${m ? `30px` : `48px`};
@@ -106,7 +106,7 @@ function _E(
     /* Phone: the square canvas has blank space below the centered origami, so
        pull the info up into it to tighten the origami→text gap (tunable). */
     margin-top: ${m ? `-44px` : `0`};
-    /* Gap between the "ahead of you" block and the "Share to move up" block. */
+    /* Gap between the "ahead of you" block and the "Pass the wonder on" block. */
     gap: ${m ? `14px` : `120px`};
     max-width: ${m ? `100%` : `460px`};
     min-width: 0;
@@ -276,16 +276,16 @@ function vE(
     o: any = String(r || ``)
       .trim()
       .replace(/[&<>"']/g, (e?: any): any => `&#${e.charCodeAt(0)};`),
-    s: any = o ? `You are in ${o}, there are` : `You are in, there are`;
+    s: any = o ? `A little wonder for you, ${o}.` : `A little wonder for you.`;
   return `
     <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:${n ? `14px` : `22px`};">
       <p data-stagger style="margin:0;font-family:${i};font-size:${n ? `16px` : `22px`};font-weight:400;color:#1f1d1e;">${s}</p>
-      <p data-stagger style="margin:0;font-family:'Bethany Elingston', 'Dancing Script', cursive;font-size:${n ? `34px` : `56px`};font-weight:400;line-height:1.02;color:#000;white-space:nowrap;"><span data-ahead-count style="font-variant-numeric:tabular-nums;">${a}</span> people</p>
-      <p data-stagger style="margin:0;font-family:${i};font-size:${n ? `16px` : `22px`};font-weight:400;color:#1f1d1e;">ahead of you.</p>
+      <p data-stagger style="margin:0;font-family:'Bethany Elingston', 'Dancing Script', cursive;font-size:${n ? `34px` : `56px`};font-weight:400;line-height:1.02;color:#000;white-space:nowrap;"><span data-ahead-count style="font-variant-numeric:tabular-nums;" style="display:none">${a}</span>Paper. Light. Possibility.</p>
+      <p data-stagger style="margin:0;font-family:${i};font-size:${n ? `16px` : `22px`};font-weight:400;color:#1f1d1e;">Your origami keepsake lives in this browser.</p>
     </div>
 
     <div style="display:flex;flex-direction:column;align-items:center;gap:${n ? `12px` : `16px`};width:100%;">
-      <p data-stagger style="margin:0;font-family:${i};font-size:${n ? `17px` : `20px`};font-weight:400;color:#1f1d1e;">Share to move up</p>
+      <p data-stagger style="margin:0;font-family:${i};font-size:${n ? `17px` : `20px`};font-weight:400;color:#1f1d1e;">Pass the wonder on</p>
       <button data-stagger data-share="copy" type="button" style="
         display:inline-flex;align-items:center;gap:10px;
         padding:14px 22px;

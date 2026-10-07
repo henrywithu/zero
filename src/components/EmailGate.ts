@@ -310,16 +310,16 @@ var XE: any = `<span class="eg-burger" aria-hidden="true"><span class="eg-burger
 var ZE: any = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>`;
 var QE: any = [
   {
-    label: `Home`,
-    href: `https://www.zero.university`,
+    label: `Trapnest`,
+    href: `https://henrywithu.com/`,
   },
   {
-    label: `Letters`,
-    href: `https://zero.university/founder-letters`,
+    label: `The Journal`,
+    href: `https://henrywithu.com/`,
   },
   {
-    label: `Why Zero`,
-    href: `https://why.zero.university`,
+    label: `Trapnest Theory`,
+    href: `https://theory.henrywithu.com/`,
   },
 ];
 function createEmailGate(
@@ -362,7 +362,7 @@ function createEmailGate(
   let y: any = document.createElement(`button`);
   y.className = `eg-circle eg-btn`;
   y.type = `button`;
-  y.setAttribute(`aria-label`, `Visit zero.university`);
+  y.setAttribute(`aria-label`, `Visit Trapnest`);
   y.style.left = `0px`;
   y.style.top = `auto`;
   y.style.bottom = `0px`;
@@ -398,7 +398,7 @@ function createEmailGate(
   C.style.fontSize = `${m}px`;
   let w: any = document.createElement(`span`);
   w.className = `eg-label`;
-  w.textContent = `Join Beta`;
+  w.textContent = `Keep wonder`;
   C.appendChild(w);
   let T: any = document.createElement(`form`);
   T.className = `eg-inputrow`;
@@ -410,7 +410,7 @@ function createEmailGate(
   E.type = `email`;
   E.name = `email`;
   E.autocomplete = `email`;
-  E.placeholder = `enter your email`;
+  E.placeholder = `email · saved only in this browser`;
   E.style.fontSize = `${m}px`;
   t && (E.value = t);
   let D: any = document.createElement(`button`);
@@ -419,7 +419,7 @@ function createEmailGate(
   D.style.height = `${u - 8}px`;
   D.style.padding = `0 ${a ? 16 : 20}px`;
   D.style.fontSize = `${m - 1}px`;
-  D.textContent = `Join Beta`;
+  D.textContent = `Keep wonder`;
   T.appendChild(E);
   T.appendChild(D);
   C.appendChild(T);
@@ -667,7 +667,7 @@ function createEmailGate(
   function ie(this: any, e?: any): any {
     e
       ? (E.classList.add(`eg-err`), (E.placeholder = e))
-      : (E.classList.remove(`eg-err`), (E.placeholder = `enter your email`));
+      : (E.classList.remove(`eg-err`), (E.placeholder = `email · saved only in this browser`));
   }
   function ae(this: any): any {
     P ||
@@ -766,7 +766,7 @@ function createEmailGate(
     N = !1;
     ie(null);
     E.disabled = !1;
-    V(`Join Beta`);
+    V(`Keep wonder`);
     D.disabled = !1;
     C.classList.remove(`is-open`);
     v.classList.remove(`eg-open`);
@@ -830,7 +830,7 @@ function createEmailGate(
     E.disabled = N;
     N
       ? (D.innerHTML = `<span class="eg-spinner" aria-hidden="true"></span>`)
-      : (V(`Join Beta`), (E.disabled = !1));
+      : (V(`Keep wonder`), (E.disabled = !1));
   }
   async function ue(this: any): Promise<any> {
     if (N) return;
@@ -853,7 +853,7 @@ function createEmailGate(
     E.classList.contains(`eg-err`) && ie(null);
   });
   y.addEventListener(`click`, (): any => {
-    window.open(`https://www.zero.university`, `_blank`, `noopener`);
+    window.open(`https://henrywithu.com/`, `_blank`, `noopener`);
   });
   S.addEventListener(`click`, (): any => {
     (re && re() === !0) || ce();

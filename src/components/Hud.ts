@@ -82,7 +82,7 @@ var Hud = class {
     });
     this.loader.lastDigits = [0, 9, 9];
     let e: any = document.createElement(`span`);
-    e.textContent = `degree`;
+    e.textContent = `beginning`;
     e.className = `loader-degree`;
     this.loader.container.appendChild(this.loader.text);
     this.loader.container.appendChild(e);
@@ -159,12 +159,12 @@ var Hud = class {
     this._menuDropdown.setAttribute(`role`, `menu`);
     for (let { label: e, href: t } of [
       {
-        label: `Home`,
-        href: `/`,
+        label: `Trapnest`,
+        href: `https://henrywithu.com/`,
       },
       {
-        label: `Manifesto`,
-        href: `/manifesto`,
+        label: `Trapnest Theory`,
+        href: `https://theory.henrywithu.com/`,
       },
     ]) {
       let n: any = document.createElement(`a`);
@@ -294,7 +294,7 @@ var Hud = class {
     e && (e.style.display = `none`);
     let t: any = document.createElement(`img`);
     t.src = `assets/brand/nav_logo_white.svg`;
-    t.alt = `ZERO`;
+    t.alt = `Trapnest Zero`;
     t.className = `loader-logo`;
     gsap.set(t, {
       opacity: 0,

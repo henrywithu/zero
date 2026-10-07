@@ -12,7 +12,13 @@ function populateCompanyPopup(this: any, e?: any, t?: any): any {
   n.onerror = (): any => {
     n.style.display = `none`;
   };
-  n.src = `/assets/logos/companies/${t.logo || ED(t.company)}.webp`;
+  n.src = `/assets/brand/mark.webp`;
+  e.querySelector(`[data-project-name]`).textContent = t.company;
+  let image = e.querySelector(`[data-project-image]`);
+  image.src = `/assets/projects/${t.image}`;
+  image.alt = t.imageAlt || t.company;
+  e.querySelector(`[data-join]`).href = t.href;
+
   let r: any = e.querySelector(`[data-hero-media]`);
   if (r) {
     jD(r);

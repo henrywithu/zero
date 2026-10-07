@@ -1,0 +1,29 @@
+{
+  "title": "Trapnest Zero",
+  "tagline": "Life & Art & Science & Technology",
+  "regions": [
+    { "rect": [0, 0, 775.26, 371.64], "lines": ["Trapnest", "Zero"], "color": "#285b48", "accent": 1 },
+    { "rect": [1703.34, 0, 557.46, 341.94], "lines": ["Life", "& Art"], "color": "#285b48", "accent": 0, "rotate": true },
+    { "rect": [0, 558.45, 257.05, 185.82], "lines": ["&", "Science"], "color": "#285b48", "accent": 0 },
+    { "rect": [1388.64, 0, 557.46, 314.15], "lines": ["&", "Technology"], "color": "#285b48", "rotate": true },
+    { "rect": [1092.93, 558.45, 945.23, 371.64], "lines": ["Every gesture", "is a beginning"], "color": "#193a30", "accent": 1 },
+    { "rect": [257.75, 558.45, 247.06, 165.84], "lines": ["Unfold"], "color": "#a2f4b8", "accent": 0 },
+    { "rect": [0, 371.64, 365.21, 186.82], "lines": ["Start with", "curiosity"], "color": "#a2f4b8", "accent": 1 },
+    { "rect": [505.51, 604.41, 594.62, 355.65], "lines": ["Paper"], "color": "#a2f4b8", "accent": 0 },
+    { "rect": [363.64, 371.64, 337.74, 186.82], "lines": ["Let go", "of the noise"], "color": "#a2f4b8" },
+    { "rect": [0, 1023, 482.83, 168.84], "lines": ["Follow the light"], "color": "#a2f4b8" },
+    { "rect": [0, 744.27, 472.68, 278.73], "lines": ["Make room", "for wonder"], "color": "#a2f4b8", "accent": 1 },
+    { "rect": [775.24, 0, 521.92, 325.68], "lines": ["A new", "perspective"], "color": "#a2f4b8", "accent": 1 },
+    { "rect": [771, 1542, 667, 221], "lines": ["Life. Art.", "Science. Technology."], "color": "#a2f4b8" },
+    { "rect": [700.32, 371.64, 331.52, 232.77], "lines": ["Nothing", "is fixed"], "color": "#a2f4b8" },
+    { "rect": [1030.99, 325.68, 334.61, 232.77], "lines": ["Everything", "can unfold"], "color": "#a2f4b8", "accent": 1 },
+    { "rect": [483.53, 960.06, 622.09, 175.83], "lines": ["Enter a new world"], "color": "#1f3530", "accent": 0 },
+    { "rect": [1083.94, 1769.27, 963.5, 278.73], "lines": ["Trapnest Zero"], "color": "#285b48" },
+    { "rect": [0, 1192.84, 579.84, 361.65], "lines": ["Life", "in motion"], "color": "#1f3530", "accent": 0 },
+    { "rect": [1313.72, 1281.75, 734.56, 336.67], "lines": ["Art", "you can feel"], "color": "#1f3530", "accent": 0 },
+    { "rect": [581.43, 1135.89, 732.38, 335.67], "lines": ["Science", "made tangible"], "color": "#1f3530", "accent": 0 },
+    { "rect": [1240.79, 930.09, 803.79, 351.66], "lines": ["Technology", "with soul"], "color": "#1f3530", "accent": 1 },
+    { "rect": [0, 1848.2, 750.18, 199.8], "lines": ["A world by Henry"], "color": "#1f3530" },
+    { "rect": [0, 1555.48, 769.93, 292.71], "lines": ["Begin", "anywhere"], "color": "#1f3530", "accent": 0 }
+  ]
+}
