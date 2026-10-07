@@ -1,0 +1,387 @@
+[
+  {
+    "name": "ForegroundPass-m_-1.vert.glsl",
+    "binding": "shaderSource1",
+    "component": "rendering/ForegroundPass",
+    "line": 37714,
+    "type": "vert"
+  },
+  {
+    "name": "ForegroundPass-h_-2.frag.glsl",
+    "binding": "shaderSource2",
+    "component": "rendering/ForegroundPass",
+    "line": 37721,
+    "type": "frag"
+  },
+  {
+    "name": "TextPass-S_-3.vert.glsl",
+    "binding": "shaderSource3",
+    "component": "rendering/TextPass",
+    "line": 38121,
+    "type": "vert"
+  },
+  {
+    "name": "TextPass-C_-4.frag.glsl",
+    "binding": "shaderSource4",
+    "component": "rendering/TextPass",
+    "line": 38128,
+    "type": "frag"
+  },
+  {
+    "name": "FrostingPass-E_-5.vert.glsl",
+    "binding": "shaderSource5",
+    "component": "rendering/FrostingPass",
+    "line": 38273,
+    "type": "vert"
+  },
+  {
+    "name": "FrostingPass-D_-6.frag.glsl",
+    "binding": "shaderSource6",
+    "component": "rendering/FrostingPass",
+    "line": 38280,
+    "type": "frag"
+  },
+  {
+    "name": "FrostingPass-O_-7.frag.glsl",
+    "binding": "shaderSource7",
+    "component": "rendering/FrostingPass",
+    "line": 38363,
+    "type": "frag"
+  },
+  {
+    "name": "FrostingPass-k_-8.vert.glsl",
+    "binding": "shaderSource8",
+    "component": "rendering/FrostingPass",
+    "line": 38397,
+    "type": "vert"
+  },
+  {
+    "name": "FrostingPass-A_-9.frag.glsl",
+    "binding": "shaderSource9",
+    "component": "rendering/FrostingPass",
+    "line": 38404,
+    "type": "frag"
+  },
+  {
+    "name": "ShatterPass-B_-10.vert.glsl",
+    "binding": "shaderSource10",
+    "component": "rendering/ShatterPass",
+    "line": 38951,
+    "type": "vert"
+  },
+  {
+    "name": "ShatterPass-V_-11.frag.glsl",
+    "binding": "shaderSource11",
+    "component": "rendering/ShatterPass",
+    "line": 38958,
+    "type": "frag"
+  },
+  {
+    "name": "ShatterPass-H_-12.vert.glsl",
+    "binding": "shaderSource12",
+    "component": "rendering/ShatterPass",
+    "line": 38966,
+    "type": "vert"
+  },
+  {
+    "name": "ShatterPass-U_-13.frag.glsl",
+    "binding": "shaderSource13",
+    "component": "rendering/ShatterPass",
+    "line": 38978,
+    "type": "frag"
+  },
+  {
+    "name": "ShatterPass-W_-14.frag.glsl",
+    "binding": "shaderSource14",
+    "component": "rendering/ShatterPass",
+    "line": 38994,
+    "type": "frag"
+  },
+  {
+    "name": "GlassShardPass-K_-15.vert.glsl",
+    "binding": "shaderSource15",
+    "component": "rendering/GlassShardPass",
+    "line": 39333,
+    "type": "vert"
+  },
+  {
+    "name": "GlassShardPass-q_-16.frag.glsl",
+    "binding": "shaderSource16",
+    "component": "rendering/GlassShardPass",
+    "line": 39342,
+    "type": "frag"
+  },
+  {
+    "name": "GlassShardPass-J_-17.frag.glsl",
+    "binding": "shaderSource17",
+    "component": "rendering/GlassShardPass",
+    "line": 39351,
+    "type": "frag"
+  },
+  {
+    "name": "GlassShardPass-vertexShader-18.vert.glsl",
+    "binding": "shaderSource18",
+    "component": "rendering/GlassShardPass",
+    "line": 39457,
+    "type": "vert"
+  },
+  {
+    "name": "LensBlurPass-X_-19.vert.glsl",
+    "binding": "shaderSource19",
+    "component": "rendering/LensBlurPass",
+    "line": 39616,
+    "type": "vert"
+  },
+  {
+    "name": "LensBlurPass-Z_-20.frag.glsl",
+    "binding": "shaderSource20",
+    "component": "rendering/LensBlurPass",
+    "line": 39623,
+    "type": "frag"
+  },
+  {
+    "name": "LensBlurPass-Q_-21.frag.glsl",
+    "binding": "shaderSource21",
+    "component": "rendering/LensBlurPass",
+    "line": 39638,
+    "type": "frag"
+  },
+  {
+    "name": "LensBlurPass-$_-22.frag.glsl",
+    "binding": "shaderSource22",
+    "component": "rendering/LensBlurPass",
+    "line": 39659,
+    "type": "frag"
+  },
+  {
+    "name": "TextMaterial-Fv-23.vert.glsl",
+    "binding": "shaderSource23",
+    "component": "rendering/TextMaterial",
+    "line": 40333,
+    "type": "vert"
+  },
+  {
+    "name": "TextMaterial-Iv-24.frag.glsl",
+    "binding": "shaderSource24",
+    "component": "rendering/TextMaterial",
+    "line": 40347,
+    "type": "frag"
+  },
+  {
+    "name": "HandsModel-chunk-25.frag.glsl",
+    "binding": "shaderSource25",
+    "component": "models/HandsModel",
+    "line": 40772,
+    "type": "frag"
+  },
+  {
+    "name": "CoinRing-eb-26.frag.glsl",
+    "binding": "shaderSource26",
+    "component": "models/CoinRing",
+    "line": 41171,
+    "type": "frag"
+  },
+  {
+    "name": "PetalParticles-nb-27.vert.glsl",
+    "binding": "shaderSource27",
+    "component": "models/PetalParticles",
+    "line": 41301,
+    "type": "vert"
+  },
+  {
+    "name": "PetalParticles-rb-28.frag.glsl",
+    "binding": "shaderSource28",
+    "component": "models/PetalParticles",
+    "line": 41308,
+    "type": "frag"
+  },
+  {
+    "name": "TextSprites-yb-29.vert.glsl",
+    "binding": "shaderSource29",
+    "component": "components/TextSprites",
+    "line": 41651,
+    "type": "vert"
+  },
+  {
+    "name": "TextSprites-bb-30.frag.glsl",
+    "binding": "shaderSource30",
+    "component": "components/TextSprites",
+    "line": 41668,
+    "type": "frag"
+  },
+  {
+    "name": "TunnelMaterials-wx-31.vert.glsl",
+    "binding": "shaderSource31",
+    "component": "rendering/TunnelMaterials",
+    "line": 43182,
+    "type": "vert"
+  },
+  {
+    "name": "TunnelMaterials-Tx-32.frag.glsl",
+    "binding": "shaderSource32",
+    "component": "rendering/TunnelMaterials",
+    "line": 43292,
+    "type": "frag"
+  },
+  {
+    "name": "TunnelMaterials-Dx-33.vert.glsl",
+    "binding": "shaderSource33",
+    "component": "rendering/TunnelMaterials",
+    "line": 43404,
+    "type": "vert"
+  },
+  {
+    "name": "TunnelMaterials-Ox-34.frag.glsl",
+    "binding": "shaderSource34",
+    "component": "rendering/TunnelMaterials",
+    "line": 43442,
+    "type": "frag"
+  },
+  {
+    "name": "TunnelMaterials-Ax-35.vert.glsl",
+    "binding": "shaderSource35",
+    "component": "rendering/TunnelMaterials",
+    "line": 43548,
+    "type": "vert"
+  },
+  {
+    "name": "TunnelMaterials-jx-36.frag.glsl",
+    "binding": "shaderSource36",
+    "component": "rendering/TunnelMaterials",
+    "line": 43568,
+    "type": "frag"
+  },
+  {
+    "name": "TunnelMaterials-Nx-37.vert.glsl",
+    "binding": "shaderSource37",
+    "component": "rendering/TunnelMaterials",
+    "line": 43593,
+    "type": "vert"
+  },
+  {
+    "name": "TunnelMaterials-Px-38.frag.glsl",
+    "binding": "shaderSource38",
+    "component": "rendering/TunnelMaterials",
+    "line": 43615,
+    "type": "frag"
+  },
+  {
+    "name": "GateThreeToFour-chunk-39.frag.glsl",
+    "binding": "shaderSource39",
+    "component": "stages/GateThreeToFour",
+    "line": 44649,
+    "type": "frag"
+  },
+  {
+    "name": "GateThreeToFour-chunk-40.frag.glsl",
+    "binding": "shaderSource40",
+    "component": "stages/GateThreeToFour",
+    "line": 44762,
+    "type": "frag"
+  },
+  {
+    "name": "CloudField-zS-41.vert.glsl",
+    "binding": "shaderSource41",
+    "component": "models/CloudField",
+    "line": 45009,
+    "type": "vert"
+  },
+  {
+    "name": "CloudField-BS-42.frag.glsl",
+    "binding": "shaderSource42",
+    "component": "models/CloudField",
+    "line": 45019,
+    "type": "frag"
+  },
+  {
+    "name": "companies-$S-43.vert.glsl",
+    "binding": "shaderSource43",
+    "component": "content/companies",
+    "line": 45653,
+    "type": "vert"
+  },
+  {
+    "name": "companies-eC-44.frag.glsl",
+    "binding": "shaderSource44",
+    "component": "content/companies",
+    "line": 45660,
+    "type": "frag"
+  },
+  {
+    "name": "MapMaterials-tC-45.frag.glsl",
+    "binding": "shaderSource45",
+    "component": "rendering/MapMaterials",
+    "line": 45673,
+    "type": "frag"
+  },
+  {
+    "name": "WaitlistOverlay-vertexShader-46.vert.glsl",
+    "binding": "shaderSource46",
+    "component": "components/WaitlistOverlay",
+    "line": 48650,
+    "type": "vert"
+  },
+  {
+    "name": "WaitlistOverlay-fragmentShader-47.frag.glsl",
+    "binding": "shaderSource47",
+    "component": "components/WaitlistOverlay",
+    "line": 48671,
+    "type": "frag"
+  },
+  {
+    "name": "MapMarkers-uD-48.vert.glsl",
+    "binding": "shaderSource48",
+    "component": "models/MapMarkers",
+    "line": 51685,
+    "type": "vert"
+  },
+  {
+    "name": "MapMarkers-dD-49.frag.glsl",
+    "binding": "shaderSource49",
+    "component": "models/MapMarkers",
+    "line": 51692,
+    "type": "frag"
+  },
+  {
+    "name": "MapMarkers-mD-50.vert.glsl",
+    "binding": "shaderSource50",
+    "component": "models/MapMarkers",
+    "line": 51710,
+    "type": "vert"
+  },
+  {
+    "name": "MapMarkers-hD-51.frag.glsl",
+    "binding": "shaderSource51",
+    "component": "models/MapMarkers",
+    "line": 51730,
+    "type": "frag"
+  },
+  {
+    "name": "MapMarkers-gD-52.vert.glsl",
+    "binding": "shaderSource52",
+    "component": "models/MapMarkers",
+    "line": 51742,
+    "type": "vert"
+  },
+  {
+    "name": "MapMarkers-_D-53.frag.glsl",
+    "binding": "shaderSource53",
+    "component": "models/MapMarkers",
+    "line": 51749,
+    "type": "frag"
+  },
+  {
+    "name": "StarOverlay-jO-54.vert.glsl",
+    "binding": "shaderSource54",
+    "component": "components/StarOverlay",
+    "line": 54767,
+    "type": "vert"
+  },
+  {
+    "name": "StarOverlay-MO-55.frag.glsl",
+    "binding": "shaderSource55",
+    "component": "components/StarOverlay",
+    "line": 54774,
+    "type": "frag"
+  }
+]
